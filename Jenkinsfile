@@ -18,10 +18,6 @@ pipeline {
     	stage('Build') {
     		steps {
     			script {
-				sh 'export NVM_DIR="$HOME/.nvm"
-				[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-				[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion'
-                   		sh 'nvm use 20'
     				sh 'npm install'
     				sh 'npm run build'
     			}
