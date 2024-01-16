@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_USERNAME = credentials('credential-git')  // Replace with your actual credential ID
+        GIT_USERNAME = credentials('git-credentials')  // Replace with your actual credential ID
         REPO_URL = 'https://github.com/SuryaHR/insurance-company-nextapp.git'
     }
     
@@ -10,7 +10,7 @@ pipeline {
     	stage('Clone Repository') {
     		steps {
     			script {
-    				checkout([$class: 'GitSCM', branches: [[name: '*/devops']], userRemoteConfigs: [[url: REPO_URL, credentialsId: 'credential-git']]])
+    				checkout([$class: 'GitSCM', branches: [[name: '*/devops']], userRemoteConfigs: [[url: REPO_URL, credentialsId: 'git-credentials']]])
     			}
     		}
     	}
