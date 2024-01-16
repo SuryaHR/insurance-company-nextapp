@@ -18,6 +18,7 @@ pipeline {
     	
     	stage('Build') {
     		steps {
+			sh "mkdir -p ${NVM_DIR}"
                 withEnv(["NVM_DIR=$NVM_DIR"]) {
     			    script {
                         		sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash'
