@@ -18,6 +18,7 @@ pipeline {
     	stage('Build') {
     		steps {
     			script {
+				sh 'nvm use 20'	
     				sh 'npm install'
     				sh 'npm run build'
     			}
