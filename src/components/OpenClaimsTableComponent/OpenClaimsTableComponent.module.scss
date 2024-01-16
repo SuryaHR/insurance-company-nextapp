@@ -1,0 +1,14 @@
+@use "@/scss/colors.scss" as *;
+
+.claimContainer {
+  background-color: $astral;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .claimContentContainer {
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}

@@ -1,0 +1,108 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+@import "bootstrap/dist/css/bootstrap-grid.min.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* > h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  height: 100vh;
+  overflow: auto;
+  color: $mineShaft;
+  @include customscrollbar;
+}
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+}
+.text-danger {
+  color: #df424f !important;
+}
+a {
+  color: $astral;
+  text-decoration: none;
+  text-shadow: none;
+  font-size: 13px;
+  &:hover {
+    color: $blueJay;
+    text-decoration: underline;
+  }
+}
+.row {
+  margin: 0;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.w-fit {
+  width: fit-content;
+}
+.Toastify__toast-container {
+  width: fit-content;
+  z-index: 999999;
+}
+.hideInputArrow {
+  & ::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+textarea {
+  border: 1px solid $grey4;
+  font-size: 13px;
+  font-family: inherit;
+  border-radius: 4px;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border-color: $royalBlue;
+  }
+}
+.errorText {
+  color: $errorRed;
+}

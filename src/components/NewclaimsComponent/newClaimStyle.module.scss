@@ -1,0 +1,94 @@
+@use "@/scss/colors.scss" as *;
+
+// .cards {
+//   height: 80%;
+// }
+
+.informationTab {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  background-color: $astral;
+}
+.claimText {
+  color: $white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 8px;
+}
+
+.PolicyholderText {
+  position: relative;
+  margin-top: 30px;
+}
+
+.customTitleClassname {
+  position: relative;
+  color: $doveGray;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+// .cancelButton {
+
+//   font-weight: normal;
+//   width: auto;
+//   height: 120%;
+//   font-family: "Open Sans", sans-serif;
+// }
+
+// .resetButton {
+//   position: relative;
+//   display: inline-block;
+//   border: none;
+//   font-size: 13px;
+//   width: 8%;
+//   height: 30px;
+//   border-radius: 5px;
+//   margin-left: 85%;
+//   font-family: "Open Sans", sans-serif;
+//   font-weight: 600;
+//   padding: 2px 12px;
+//   background-color: #dddddd;
+//   margin-bottom: 30px;
+// }
+.resetButton {
+  position: relative;
+  left: 10px;
+  height: 25px;
+  width: 90px;
+  border: #dddddd;
+  background-color: #dddddd;
+  border-radius: 5px;
+  font-weight: 600px;
+}
+.saveButton {
+  position: relative;
+  left: 20px;
+  height: 25px;
+  width: 90px;
+  border: #dddddd;
+  background-color: #dddddd;
+  border-radius: 5px;
+  font-weight: 600px;
+}
+.resetBtn {
+  font-weight: normal;
+  width: auto;
+  height: 120%;
+  font-family: "Open Sans", sans-serif;
+}
+.upButtons {
+  top: 28px;
+}
+.downButtons {
+  position: relative;
+  bottom: 15px;
+}

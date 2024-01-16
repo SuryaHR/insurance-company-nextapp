@@ -1,0 +1,3 @@
+import AdjusterAssignServiceRequestContainer from "./AdjusterAssignServiceRequestContainer";
+
+export default AdjusterAssignServiceRequestContainer;

@@ -1,0 +1,86 @@
+@use "@/scss/colors.scss" as *;
+
+.genericBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 2px 12px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid $darkGrey;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+}
+.large-btn {
+  height: 40px;
+}
+.medium-btn {
+  height: 32px;
+}
+.small-btn {
+  height: 24px;
+}
+.existing-blue-btn {
+  background-color: #347ab6;
+  color: #fff;
+  &:hover {
+    background-color: #6bbccf;
+  }
+}
+
+.light-blue {
+  color: $white;
+  background-color: $lightBlueBtn;
+  &:not(:disabled):hover {
+    background-color: $lightBlueHoverBtn;
+  }
+}
+
+.dark-blue {
+  background: $darkBlueBtn;
+  color: $white;
+  &:not(:disabled):hover {
+    background-color: $darkBlueHoverBtn;
+  }
+}
+
+.normal-button {
+  background-color: $lightBtn;
+  padding: 2px 12px;
+  line-height: 18px;
+  // margin-left: auto;
+  // min-width: fit-content;
+  // min-height: fit-content;
+  font-weight: 600;
+  font-size: 13px;
+  color: $mineShaft;
+  &:hover {
+    background-color: $grey3;
+  }
+}
+
+.delete-button {
+  background-color: #cc4848;
+  color: $white;
+  &:not(:disabled):hover {
+    background-color: #b64343;
+  }
+}
+
+.linkButton {
+  color: $astral;
+  height: fit-content;
+  border: none;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+    color: $blueJay;
+  }
+}

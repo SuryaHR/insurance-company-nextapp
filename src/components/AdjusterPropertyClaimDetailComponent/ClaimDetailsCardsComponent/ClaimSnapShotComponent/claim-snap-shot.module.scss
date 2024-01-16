@@ -1,0 +1,61 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.snapShotcardContainer {
+  height: 350px;
+  margin-top: 10px;
+
+  .contentContainer {
+    height: 90%;
+    overflow-y: auto;
+    margin-right: -10px;
+    // display: flex;
+    @include customscrollbar(rgb(207, 201, 201), 6px, true);
+
+    // .fieldRowContainer {
+    //   display: flex;
+    //   font-size: 13px;
+    //   margin: 5px 0;
+    //   padding: 3px;
+    //   .fieldLabel {
+    //     text-align: right;
+    //     font-weight: 600;
+    //     padding-left: 10px;
+    //     padding-right: 12px;
+    //   }
+    // }
+
+    // cards UI
+    .contentCardsContainer {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+
+      .snapShotContentCard {
+        border-top: 3px solid $lightBlue2;
+        min-width: 108px;
+
+        .cardItemContainer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          gap: 10px;
+          .itemTitle {
+            color: $darkSkyBlue;
+            font-weight: 700;
+          }
+          .numericContent {
+            margin-right: 5px;
+            font-weight: 600;
+          }
+          .textContent {
+            font-size: 9px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

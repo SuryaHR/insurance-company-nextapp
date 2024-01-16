@@ -1,0 +1,31 @@
+@use "@/scss/mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.policyHolderCradContainer {
+  height: 350px;
+  margin-top: 10px;
+  .taskContentContainer {
+    height: 86%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include customscrollbar($lightGrey2, 6px, true);
+  }
+}
+.formNameContainer {
+  display: flex;
+  border-bottom: 1px solid #e4e8eb;
+}
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+}
+
+.modalContainer {
+  align-items: start;
+}
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}

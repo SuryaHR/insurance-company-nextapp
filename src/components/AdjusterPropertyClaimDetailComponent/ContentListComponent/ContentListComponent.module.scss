@@ -1,0 +1,71 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.contentListHeaderContainer {
+  border-radius: 0px;
+  border-bottom: 1px solid #666 !important;
+  margin-bottom: 5px !important;
+  padding: 0;
+  padding-bottom: 4px;
+
+  .contentListHeader {
+    font-size: 18px;
+    padding: 1px;
+    border-bottom: none;
+  }
+}
+.contentListContainer {
+  background-color: $astral;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .contentListContentContainer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+.contentListButtonDiv {
+  display: flex;
+  gap: 10px;
+  .contentListBtn {
+    margin-left: 0px;
+    width: max-content;
+    min-height: 28px;
+  }
+}
+.dropDownDiv {
+  background-color: white;
+  width: 8%;
+  // border: 1px solid red;
+  z-index: 999;
+  position: absolute;
+  top: 667px;
+  left: 20px;
+  border-radius: 4px;
+}
+.dropDownInnerDiv {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px;
+  // padding-top: 4px;
+  // padding-bottom: 4px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  // background-color: teal;
+}
+.dropDownInnerDiv:hover {
+  background-color: lightblue;
+}
+.modalWidth {
+  width: 100%;
+}
+.selectedItemsLine {
+  padding: 8px;
+  font-size: 12px;
+  color: $astral;
+}

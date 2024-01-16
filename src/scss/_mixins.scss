@@ -1,0 +1,36 @@
+@use "@/scss/colors.scss" as *;
+
+@mixin customscrollbar($color: $scrollbarColor, $width: 8px, $roundBorder: false) {
+  $visiblility: hidden;
+  &:hover {
+    &::-webkit-scrollbar-track {
+      visibility: visible;
+    }
+    &::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0px 0 3px $color;
+    box-shadow: inset 0px 0 3px $color;
+    visibility: $visiblility;
+    @if $roundBorder == true {
+      border-radius: 5px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: $width;
+    @if $roundBorder == true {
+      border-radius: 5px;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color;
+    visibility: $visiblility;
+    @if $roundBorder == true {
+      border-radius: 5px;
+    }
+  }
+}

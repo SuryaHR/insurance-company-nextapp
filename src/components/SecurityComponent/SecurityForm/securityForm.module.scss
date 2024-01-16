@@ -1,0 +1,27 @@
+.securityFormContainer {
+  border: 1px solid #e7ecf1;
+  padding: 5px 25% 5px 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.5714px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 25px;
+    .formControl {
+      display: grid;
+      grid-template-columns: minmax(100px, 150px) 1fr;
+      gap: 16px;
+      align-items: center;
+      text-align: right;
+      text-transform: capitalize;
+      .inputFieldClassname {
+        border: 1px solid #c2cad8;
+      }
+    }
+  }
+}

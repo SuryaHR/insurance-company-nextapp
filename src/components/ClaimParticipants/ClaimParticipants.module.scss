@@ -1,0 +1,77 @@
+@use "@/scss/colors.scss" as *;
+
+.claimParticipants {
+  height: 300px;
+}
+.claimCards {
+  position: relative;
+  height: 30%;
+  width: 20%;
+  padding: 20px;
+  padding-left: 30px;
+}
+.name {
+  position: relative;
+  color: #65a0d0;
+  font-weight: 600;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 1px;
+}
+.companyName {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  margin-top: 1px;
+}
+.role {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 550;
+  margin-top: 1px;
+}
+.phone {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 100;
+  flex-grow: 1;
+}
+.heading {
+  margin: 16px 25px 0 25px;
+  font-size: 18px;
+  font-weight: 100;
+}
+.mail {
+  background-color: transparent;
+  border: none;
+  height: 14px;
+  .ciMail {
+    color: $blueJay;
+    width: 20px;
+    height: 14px;
+  }
+}
+.modalWidth {
+  width: 40%;
+}
+
+.useCircle {
+  color: $blueJay;
+  width: 100px;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.participantsCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  padding: 0 8px;
+}

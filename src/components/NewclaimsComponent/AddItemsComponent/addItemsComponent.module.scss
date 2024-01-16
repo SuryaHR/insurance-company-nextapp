@@ -1,0 +1,29 @@
+@use "@/scss/colors.scss" as *;
+
+.addItemsTitle {
+  background-color: $astral;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.newClaimBtn {
+  width: auto;
+  //   height: 30px;
+}
+
+.cancelButton {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  color: #337ab7;
+  // float: right;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}

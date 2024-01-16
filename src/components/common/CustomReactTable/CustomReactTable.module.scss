@@ -1,0 +1,214 @@
+.reactTable {
+  table {
+    width: 100%;
+    margin-top: -1px;
+    border-spacing: 0px;
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    tfoot {
+      position: sticky;
+      bottom: 0;
+      z-index: 1;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #337ab708;
+    }
+    th {
+      background: #dcdcdc;
+      padding: 4px;
+      line-height: unset;
+      font-size: 13px;
+      font-weight: 600;
+      height: 28px;
+      border: 1px solid #e7ecf1;
+      > div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    tbody tr {
+      justify-content: flex-start;
+      flex: 1 1 auto;
+      position: relative; /* need this to position inner content */
+      overflow-y: auto;
+      &:hover {
+        background-color: #f3f4f6;
+      }
+    }
+
+    td {
+      border: 1px solid #e7ecf1;
+      padding: 4px;
+      line-height: 150%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 11px;
+      cursor: pointer;
+      vertical-align: middle;
+      display: table-cell;
+      color: #333333;
+    }
+  }
+
+  tbody tr.invalidRow td {
+    border-top: 2px solid #ea6060;
+    border-bottom: 2px solid #ea6060;
+  }
+
+  tbody tr.invalidRow td:first-child {
+    border-left: 2px solid #ea6060;
+  }
+
+  tbody tr.invalidRow td:last-child {
+    border-right: 2px solid #ea6060;
+  }
+
+  .paginationContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .paginationText {
+      color: #337ab7;
+      font-weight: 700;
+      font-size: 13px;
+    }
+  }
+  .paginationButton {
+    width: 33px;
+    height: 33px;
+
+    padding: 6px 12px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+    &:hover {
+      cursor: pointer;
+      color: #23527c;
+      background-color: #eeeeee;
+      border-color: #ddd;
+    }
+    &:disabled {
+      color: #777777;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      cursor: not-allowed;
+    }
+  }
+  .active {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    cursor: default;
+  }
+  .paginationIcon {
+    font-size: 11px;
+  }
+}
+.reactTableScroll {
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px grey;
+    background-color: #dddddd75;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+  }
+}
+.All_Items_Priced {
+  border-left: 5px solid #65bf5f !important;
+}
+.Partial_Items_Priced {
+  border-left: 5px solid #feb467 !important;
+}
+.No_Items_Priced {
+  border-left: 5px solid #fa0c04 !important;
+}
+.tooltipPop {
+  background: white;
+  color: black;
+  padding: 0px;
+  z-index: 999;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.filterIcon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+.filterPopUp {
+  // position: absolute;
+  // top: 25px;
+  // right: 0;
+  background: white;
+  z-index: 9;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  .filterContainer {
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0.5rem !important;
+    text-transform: uppercase;
+  }
+  .filterCheckBox {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+  }
+  .filterHeader {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding: 10px 20px;
+    background-color: #337ab787;
+    border-radius: 5px 5px 0 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    label {
+      white-space: nowrap;
+    }
+  }
+  .filterContents {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 10px 20px 0 20px;
+    width: max-content;
+  }
+  .actionButtons {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.fixedHeader th {
+  position: sticky;
+  top: 40px;
+  background-color: #dcdcdc;
+  z-index: 1;
+  // position: fixed;
+  // width: 30%;
+}

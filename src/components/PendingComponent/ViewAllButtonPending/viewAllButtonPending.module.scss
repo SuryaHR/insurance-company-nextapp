@@ -1,0 +1,9 @@
+@use "@/scss/colors.scss" as *;
+
+.anchorStyle {
+  text-decoration: underline;
+
+  &:hover {
+    color: $blueJay;
+  }
+}

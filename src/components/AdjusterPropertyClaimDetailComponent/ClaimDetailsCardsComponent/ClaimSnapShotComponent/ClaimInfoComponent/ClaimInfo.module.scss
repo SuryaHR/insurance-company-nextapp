@@ -1,0 +1,12 @@
+.fieldRowContainer {
+  display: flex;
+  font-size: 13px;
+  margin: 5px 0;
+  padding: 3px;
+  .fieldLabel {
+    text-align: right;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 12px;
+  }
+}

@@ -1,0 +1,365 @@
+@use "@/scss/colors.scss" as *;
+
+.label {
+  position: relative;
+  font-weight: 570;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+.labelContainer {
+  position: relative;
+  font-weight: 570;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  gap: 5px;
+}
+.claim {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+.claimDate {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+
+.insuranceCompany {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+.mobile {
+  width: 40%;
+  height: 30px;
+  right: 310px;
+  padding: 3px 10px;
+}
+.phoneNumber {
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+}
+// .labelAdjusterName {
+//   position: relative;
+//   font-weight: 550;
+//   font-size: 13px;
+//   font-family: "Open Sans", sans-serif;
+//   margin-left: 115px;
+// }
+.mobile {
+  position: relative;
+  margin-left: 119px;
+}
+// .labelLossDamageType {
+//   position: relative;
+//   font-weight: 550;
+//   font-size: 13px;
+//   font-family: "Open Sans", sans-serif;
+//   margin-left: 104px;
+// }
+.secondaryPhoneNumber {
+  width: 40%;
+  height: 30px;
+  right: 350px;
+  padding: 3px 10px;
+  position: relative;
+  margin-left: 159px;
+}
+// .labelAddress {
+//   position: relative;
+//   font-weight: 550;
+//   font-size: 13px;
+//   font-family: "Open Sans", sans-serif;
+//   margin-left: 125px;
+// }
+.address {
+  position: relative;
+  width: 40%;
+  height: 50px;
+  right: 190px;
+  padding: 3px 10px;
+}
+.addressOne {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  right: 190px;
+  padding: 3px 10px;
+  //   margin-top: 10px;
+}
+.addressSecond {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  right: 195px;
+  padding: 3px 10px;
+  padding: 10px;
+  //   margin-top: 10px;
+}
+.options {
+  position: relative;
+  width: 8%;
+  right: 13.5%;
+  font-size: 12px;
+}
+.selectOptions {
+  position: relative;
+  font-size: 12px;
+}
+// .labelState {
+//   position: relative;
+//   font-weight: 550;
+//   font-size: 13px;
+//   font-family: "Open Sans", sans-serif;
+//   margin-left: 190px;
+// }
+.zipCode {
+  position: relative;
+  width: 30%;
+  height: 30px;
+  right: 350px;
+  padding: 3px 10px;
+  left: 99px;
+  bottom: 16px;
+}
+.formControl {
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField {
+      height: 20px;
+      display: flex;
+      gap: 2px;
+    }
+  }
+}
+
+.formControl1 {
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper1 {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField1 {
+      display: flex;
+      gap: 3px;
+      height: 20px;
+    }
+  }
+}
+
+.textArea {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  resize: horizontal;
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: $royalBlue;
+  }
+}
+.errorMessage {
+  position: relative;
+  left: 350px;
+  bottom: 30px;
+}
+
+.fileType {
+  font-size: 13px;
+  color: #337ab7;
+  cursor: pointer;
+}
+.fileType:hover {
+  color: #23527c;
+}
+
+.categoryName {
+  // padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+.category {
+  // margin-left: 90px;
+  // right: 290px;
+  padding-left: 12%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  // margin-left: 40px;
+}
+.aggregateStyle {
+  // padding-left: 40px;
+  // margin-left: 20px;
+  // width: 30%;
+}
+.itemLimitSTyle {
+  // padding-left: 30px;
+  margin-left: 20px;
+  // width: 27%;
+}
+.value {
+  background-color: transparent;
+  // width: 200px;
+  text-align: right;
+  border: none;
+  // right: 80px;
+}
+.aggregateCoverage {
+  padding-left: 6%;
+  // left: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  // right: 790px;
+}
+.itemLimit {
+  // margin-left: 90px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.cards {
+  position: relative;
+  width: 65%;
+  margin-top: 50px;
+  // : 50px;
+}
+.coverages {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  // margin-left: 50px;
+}
+.deleteButton {
+  // width: 30px;
+  background-color: transparent;
+  border: none;
+  // margin-left: 30px;
+}
+.closeCircle {
+  width: 70px;
+  color: red;
+  height: 30px;
+  // background-color: red;
+}
+.specialCategory {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  color: #337ab7;
+  width: 30%;
+  // float: right;
+  margin-left: 70%;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1%;
+  font-weight: 600;
+  // text-align: right;
+}
+.specialCategory:hover {
+  color: $blueJay;
+  border-bottom: 2px solid $blueJay;
+}
+.specialCategoryDiv {
+  bottom: 35px;
+  // margin-left: 25%;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+.specialcategoryInput {
+  margin-right: 1%;
+  // display: flex;
+  // margin-left: 10%;
+}
+.specialLimit {
+  font-weight: 570;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+.categoryInput {
+  margin-right: 3%;
+  // display: flex;
+  // gap: 23px;
+}
+.search {
+  position: relative;
+  // right: 20px;
+  height: 40px;
+  // margin-left: 10px;
+  // padding: 3px;
+  // padding-left: 20px;
+  // right: 30px;
+  // width: 40%;
+  // padding-right: 20px;
+}
+.outLimeSearch {
+  position: relative;
+  bottom: 30px;
+  margin-left: 180px;
+  opacity: 0.2;
+}
+.labelClassname {
+  font-size: 13px;
+}
+.ms-5 {
+  // padding-left: 10px;
+  padding-left: 10px;
+}
+.homeSelect {
+  position: relative;
+  right: 8%;
+}
+.labelContent {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.file_input_wrapper .btn_upload {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgb(200, 196, 196);
+  color: black;
+  cursor: pointer;
+}
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+}
+.imagePreviewDiv {
+  width: 400px;
+  height: 400px;
+}
+
+.contentCenter {
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: red;
+}

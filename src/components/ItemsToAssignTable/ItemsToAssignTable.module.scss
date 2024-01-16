@@ -1,0 +1,29 @@
+.addItemsContainer {
+  background-color: #337ab7;
+  min-height: 15px;
+  // display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: right;
+  // overflow-y: auto;
+
+  .addItemsContentContainer {
+    height: inherit;
+    display: flex;
+    margin-left: 5px;
+  }
+}
+.styleTable {
+  margin-left: 10px;
+}
+.selectItemsStyle {
+  margin-left: auto;
+  width: auto;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+}

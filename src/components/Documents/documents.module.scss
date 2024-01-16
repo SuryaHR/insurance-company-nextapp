@@ -1,0 +1,206 @@
+.heading {
+  color: #666;
+  padding: 1px;
+  font-size: 18px;
+  display: flex;
+  padding-top: 10px;
+}
+
+.SubHeadingDiv {
+  border-bottom: none !important;
+  background-color: #dcdcdc;
+  color: #666;
+  padding: 0px 5px;
+  font-size: 15px;
+  width: 96%;
+  margin-left: 20px;
+}
+.headingLine {
+  width: 95%;
+  margin-left: 30px;
+  padding-top: 3px;
+}
+.button {
+  font-size: 13px;
+  text-shadow: none;
+  color: #337ab7;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  display: flex;
+  float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.addDocument {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 1px;
+}
+.noAvailable {
+  display: flex;
+  padding-top: 25px;
+  color: red;
+  font-size: 13px;
+}
+.circle {
+  width: 80%;
+  height: 40px;
+}
+.circleButton {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 26px;
+  border: 2px solid #f5f5f5;
+  border-radius: 50%;
+  background: #f5f5f5;
+  text-align: center;
+  text-decoration: none;
+  color: #337ab7;
+  box-shadow: 0 0 3px grey;
+  font-size: 15px;
+  top: 2px;
+  font-weight: bold;
+}
+.newDocument {
+  position: relative;
+  bottom: 10px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-weight: 400;
+}
+.danger {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 25px;
+}
+.documentAavailable {
+  padding-left: 5px;
+}
+
+.file_input_wrapper .btn_upload {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgb(200, 196, 196);
+  color: black;
+  cursor: pointer;
+}
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-bottom: 200px;
+}
+.imagePreviewDiv {
+  width: 400px;
+  height: 400px;
+}
+
+.contentCenter {
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: red;
+}
+.attachmentBox {
+  width: 550px;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.textArea {
+  border: none;
+}
+.text {
+  margin-left: 20px;
+}
+.uploadText {
+  font-size: 13px;
+  font-weight: 600;
+}
+.uploadNewDocument {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+// .save {
+//   background: transparent;
+//   border: none;
+//   color: #337ab7;
+//   font-size: 13px;
+//   font-weight: 600;
+// }
+// .cancel {
+//   background: transparent;
+//   border: none;
+//   color: #337ab7;
+//   font-size: 13px;
+//   font-weight: 600;
+//   padding-left: 5px;
+// }
+.textEllipsis1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+}
+.search {
+  position: relative;
+  width: 60%;
+  padding-left: 30%;
+  margin-top: 20px;
+}
+.closeIcon {
+  position: relative;
+  left: 534px;
+  bottom: 15px;
+  border-radius: 25px;
+  border: 0mm;
+  width: 20px;
+  height: 20px;
+  background-color: #f20707;
+}
+.image {
+  display: inline-block;
+  object-fit: cover;
+  height: 100px;
+  aspect-ratio: 400 / 400;
+}
+.inputFile {
+  display: none;
+}
+.ioClose {
+  color: #ffff;
+  width: 20px;
+  height: 20px;
+}
+.frame {
+  position: relative;
+  left: 100px;
+}
+
+.closeButton {
+  color: #f20707;
+}
+.closeIcons {
+  position: relative;
+  left: 104px;
+  bottom: 15px;
+  border-radius: 25px;
+  border: 0mm;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  background-color: #f20707;
+}

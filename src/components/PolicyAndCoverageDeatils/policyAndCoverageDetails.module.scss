@@ -1,0 +1,636 @@
+// .card1 {
+//   display: flex;
+//   flex-direction: column;
+//   width: 700px;
+//   height: 90%;
+//   padding-left: 30px;
+//   padding-top: 20px;
+// }
+// .card2 {
+//   display: flex;
+//   flex-direction: column;
+//   width: 700px;
+//   height: 90%;
+//   padding-top: 20px;
+// }
+.cardPolicy {
+  height: 360px;
+}
+.editableDiv {
+  // background-color: #fed9ff;
+  width: 600px;
+  height: 260px;
+  text-align: center;
+  padding: 20px;
+  // height: 100px;
+  overflow-y: scroll;
+}
+.policyNo {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.address {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.number {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  font-weight: 600;
+}
+.graceSmith {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+}
+.policyNumber {
+  padding-left: 10px;
+}
+.policyCoverageDetails {
+  padding-top: 6%;
+}
+.edit {
+  background-color: transparent;
+  border: none;
+  color: #32c2ca;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 1px;
+  cursor: pointer;
+}
+.edit:hover {
+  border-bottom: 1px solid #27235e;
+  color: #27235e;
+}
+.resetPassword {
+  background-color: transparent;
+  border: none;
+  color: #32c2ca;
+  font-size: 15px;
+  font-weight: 500;
+  // padding-left: 7%;
+  cursor: pointer;
+}
+.resetPassword:hover {
+  color: #337ab7;
+}
+.editIcon {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.editText {
+  display: flex;
+  gap: 1px;
+}
+.Password {
+  height: 2%;
+  width: 10%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.categoryLimit {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+}
+.customTitleClassname {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table {
+  padding-top: 10px;
+  width: 50%;
+  padding: 20px;
+}
+.categoryLimit {
+  padding-top: 10px;
+}
+.cancelButton {
+  padding-left: 380px;
+}
+.faRegEdit {
+  display: flex;
+  gap: 3px;
+}
+.editbutton1 {
+  width: 40px;
+}
+.editText1 {
+  display: flex;
+  gap: 1px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 50%;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 50%;
+    // padding-left: 30px;
+    padding-top: 20px;
+  }
+  .editableDiv {
+    // background-color: #fed9ff;
+    width: 600px;
+    height: 260px;
+    text-align: center;
+    padding: 20px;
+    // height: 100px;
+    overflow-y: scroll;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .cardPolicy {
+    height: 330px;
+    // width: 50%;
+  }
+  .policyAndCoverageDetails {
+    // display: flex;
+    // height: 80%;
+  }
+  .policyNo {
+    // display: flex;
+    // justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+    // padding: 5px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+    // padding: 5px;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 1px;
+
+    cursor: pointer;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .edit:hover {
+    border-bottom: 1px solid #27235e;
+    color: #27235e;
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    // padding-left: 7%;
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: #337ab7;
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+    width: 10%;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+    margin-top: 2px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}
+// @media only screen and (min-width: 1024px) {
+//   .card1 {
+//     display: flex;
+//     flex-direction: column;
+//     width: 470px;
+//     height: 80%;
+//     padding-left: 30px;
+//     padding-top: 20px;
+//   }
+//   .card2 {
+//     display: flex;
+//     flex-direction: column;
+//     width: 470px;
+//     height: 80%;
+//     // padding-left: 30px;
+//     padding-top: 20px;
+//   }
+//   .cardPolicy {
+//     height: 370px;
+//     // width: 50%;
+//   }
+//   .editableDiv {
+//     // background-color: #fed9ff;
+//     width: 600px;
+//     height: 260px;
+//     text-align: center;
+//     padding: 20px;
+//     // height: 100px;
+//     overflow-y: scroll;
+//   }
+//   .policyAndCoverageDetails {
+//     // display: flex;
+//     // height: 80%;
+//   }
+//   .policyNo {
+//     // display: flex;
+//     // justify-content: center;
+//     font-size: 13px;
+//     font-weight: 600;
+//     padding-left: 15px;
+//     // padding: 5px;
+//   }
+//   .number {
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 13px;
+//     font-weight: 600;
+//     justify-content: center;
+//     // padding: 5px;
+//   }
+//   .policyNumber {
+//     padding-left: 10px;
+//   }
+//   .policyCoverageDetails {
+//     padding-top: 6%;
+//   }
+//   .edit {
+//     background-color: transparent;
+//     border: none;
+//     color: #32c2ca;
+//     font-size: 15px;
+//     font-weight: 500;
+//     padding-top: 1px;
+//     cursor: pointer;
+//   }
+//   .edit:hover {
+//     border-bottom: 1px solid #27235e;
+//     color: #27235e;
+//   }
+//   .resetPassword {
+//     background-color: transparent;
+//     border: none;
+//     color: #32c2ca;
+//     font-size: 15px;
+//     font-weight: 500;
+//     // padding-left: 7%;
+//     cursor: pointer;
+//   }
+//   .resetPassword:hover {
+//     color: #337ab7;
+//   }
+//   .editIcon {
+//     margin-top: 2px;
+//     margin-right: 5px;
+//   }
+//   .editText {
+//     display: flex;
+//     gap: 1px;
+//   }
+//   .Password {
+//     height: 2%;
+//     width: 10%;
+//     margin-right: 5px;
+//     margin-top: 5px;
+//   }
+//   .categoryLimit {
+//     position: relative;
+//     width: 100%;
+//     font-size: 14px;
+//   }
+//   .customTitleClassname {
+//     position: relative;
+//     width: 100%;
+//     font-size: 14px;
+//     font-weight: 400;
+//   }
+//   .table {
+//     padding-top: 10px;
+//     width: 50%;
+//     padding: 20px;
+//   }
+//   .categoryLimit {
+//     padding-top: 10px;
+//   }
+//   .faRegEdit {
+//     display: flex;
+//     gap: 3px;
+//     margin-top: 8px;
+//   }
+//   .editbutton1 {
+//     width: 60px;
+//     margin-top: 2px;
+//   }
+//   .editText1 {
+//     margin-bottom: 9px;
+//   }
+// }
+@media only screen and (max-width: 1440px) {
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 50%;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 50%;
+    // padding-left: 30px;
+    padding-top: 20px;
+  }
+  .cardPolicy {
+    height: 330px;
+    // width: 50%;
+  }
+  .policyAndCoverageDetails {
+    // display: flex;
+    // height: 80%;
+  }
+  .editableDiv {
+    // background-color: #fed9ff;
+    width: 600px;
+    height: 260px;
+    text-align: center;
+    padding: 20px;
+    // height: 100px;
+    overflow-y: scroll;
+  }
+  .policyNo {
+    // display: flex;
+    // justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+    // padding: 5px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+    // padding: 5px;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 1px;
+    cursor: pointer;
+  }
+  .edit:hover {
+    border-bottom: 1px solid #27235e;
+    color: #27235e;
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    // padding-left: 7%;
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: #337ab7;
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+    width: 10%;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+    margin-top: 2px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}
+@media only screen and (min-width: 1820px) {
+  .card1 {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: 50%;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  .card2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: 50%;
+    // left: 90px;
+    padding-top: 20px;
+  }
+  .cardPolicy {
+    height: 330px;
+    // width: 50%;
+  }
+  .editableDiv {
+    // background-color: #fed9ff;
+    width: 600px;
+    height: 260px;
+    text-align: center;
+    padding: 20px;
+    // height: 100px;
+    overflow-y: scroll;
+  }
+  .policyNo {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+    // padding: 5px;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .edit:hover {
+    border-bottom: 1px solid #27235e;
+    color: #27235e;
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    // padding-left: 7%;
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: #337ab7;
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+    width: 10%;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}

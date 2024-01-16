@@ -1,0 +1,42 @@
+.addListTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.editButton {
+  color: #36c6d3;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+
+.deleteButton {
+  color: red;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.noItemsStyle {
+  text-align: center;
+  color: red;
+  font-size: 13px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid grey;
+}
+
+.checkHeader {
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    justify-content: center !important;
+  }
+}

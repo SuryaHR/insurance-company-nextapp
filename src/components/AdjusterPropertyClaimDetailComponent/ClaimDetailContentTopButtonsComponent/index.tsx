@@ -1,0 +1,3 @@
+import ClaimDetailContentTopButtonsComponent from "./ClaimDetailContentTopButtonsComponent";
+
+export default ClaimDetailContentTopButtonsComponent;

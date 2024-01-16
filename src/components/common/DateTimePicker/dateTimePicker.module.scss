@@ -1,0 +1,68 @@
+@use "@/scss/colors.scss" as *;
+
+.form-control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .input-field {
+    width: 100%;
+    height: 40px;
+    max-height: 40px;
+    padding: 3px 10px;
+    font-size: 12px;
+
+    border-radius: 7px;
+    background-color: $white;
+    border: 1px solid $grey4;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: $royalBlue;
+    }
+  }
+
+  .error-field {
+    border-color: $errorRed;
+    &:active,
+    &:focus {
+      border-color: $errorRed;
+    }
+  }
+
+  .normal-input {
+    border-radius: unset;
+    border: 1px solid $grey4;
+    background-color: $white;
+    font-size: 12px;
+    height: 25px;
+  }
+  .error-msg {
+    text-align: left;
+    font-size: 13px;
+    color: $errorRed;
+  }
+  svg {
+    fill: #ccc;
+  }
+
+  .dateClassName {
+    width: 100%;
+    height: 30px;
+    max-height: 30px;
+    padding: 3px 10px;
+    font-size: 12px;
+
+    border-radius: 4px;
+    background-color: $white;
+    border: 1px solid $grey4;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: $royalBlue;
+    }
+  }
+}

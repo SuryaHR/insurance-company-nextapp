@@ -1,0 +1,89 @@
+.descCont {
+  display: grid;
+  font-size: 14px;
+}
+
+.descCont label {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.descCont label span {
+  color: red;
+}
+
+.noImg {
+  height: 170px;
+  width: 170px;
+  border: 1px solid #a1a1a1;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.descField {
+  border-radius: 1px;
+  resize: none;
+  padding: 2px;
+  margin-top: 0px;
+}
+
+.alignRight {
+  justify-content: right;
+}
+
+.buttonContStyle {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: end;
+  grid-gap: 5px;
+}
+
+.buttonStyle {
+  width: auto;
+  padding: 4px 15px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ddd;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.infoTextbox {
+  font-size: 9px;
+  text-align: left;
+  color: red;
+  font-weight: bold;
+}
+
+.uploadAnchor {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  margin-bottom: -10px;
+}
+
+.fileNameSty {
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  color: #337ab7;
+}
+
+.deleteImageSty {
+  display: block;
+  float: right;
+  color: red;
+  font-size: 21px;
+  position: relative;
+  text-align: end;
+  margin-right: -8px;
+  margin-bottom: -12px;
+  cursor: pointer;
+}

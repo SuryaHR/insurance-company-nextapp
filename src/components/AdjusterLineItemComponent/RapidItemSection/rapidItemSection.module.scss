@@ -1,0 +1,26 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  padding: 4px;
+  border: 1px solid #c7ccd0;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: 0 0 10px #c7ccd0;
+  animation-name: rapid;
+  animation-duration: 0.8s;
+  animation-direction: linear;
+  // min-height: 100px;
+  transform: translateY(0);
+}
+
+@keyframes rapid {
+  from {
+    // min-height: 0;
+    transform: translateY(-25%);
+  }
+  to {
+    // min-height: 100px;
+    transform: translateY(0);
+  }
+}

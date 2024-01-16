@@ -1,0 +1,33 @@
+@use "@/scss/colors.scss" as *;
+
+.stickyContainer {
+  position: sticky;
+  top: 35px;
+  z-index: 9;
+  background-color: $white;
+  .headingContainer {
+    margin-top: 10px;
+    font-weight: 400;
+    padding-left: 0;
+  }
+  .headingTxt {
+    color: $doveGray;
+    padding: 1px;
+    font-size: 18px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 0 16px;
+  .divider {
+    margin: 16px 0 0;
+  }
+}
+
+.Wizard {
+  font-size: 18px;
+}

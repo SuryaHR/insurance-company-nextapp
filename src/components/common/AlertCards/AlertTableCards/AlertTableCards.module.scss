@@ -1,0 +1,8 @@
+@use "@/scss/_mixins.scss" as *;
+
+.container {
+  max-height: 286px;
+  overflow-y: auto;
+  padding-right: 4px;
+  @include customscrollbar(rgb(207, 201, 201), 6px, true);
+}

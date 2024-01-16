@@ -1,0 +1,24 @@
+.progressBarContainer {
+  width: 100%;
+}
+
+.progressBar {
+  height: 20px;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+  background-color: green;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+.progressText {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}

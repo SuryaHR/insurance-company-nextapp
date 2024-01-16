@@ -1,0 +1,56 @@
+@use "@/scss/colors.scss" as *;
+
+.form-control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .input-field {
+    width: 100%;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: $white;
+    border: 1px solid $grey4;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: $royalBlue;
+    }
+    &:disabled {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+  }
+  .small-input {
+    height: 30px;
+  }
+  .medium-input {
+    height: 35px;
+  }
+  .large-input {
+    height: 40px;
+  }
+  .error-field {
+    border-color: $errorRed;
+    &:active,
+    &:focus {
+      border-color: $errorRed;
+    }
+  }
+
+  .normal-input {
+    border-radius: unset;
+    border: 1px solid $grey4;
+    background-color: $white;
+    font-size: 12px;
+    height: 25px;
+  }
+  .error-msg {
+    text-align: left;
+    font-size: 13px;
+    color: $errorRed;
+  }
+}

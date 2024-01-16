@@ -1,0 +1,21 @@
+@use "@/scss/mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.messageCradContainer {
+  height: 350px;
+  margin-top: 10px;
+  .messageListContainer {
+    height: 86%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include customscrollbar($lightGrey2, 6px, true);
+  }
+}
+.modalContainer {
+  align-items: start;
+}
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}

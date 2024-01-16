@@ -1,0 +1,8 @@
+@use "@/scss/colors.scss" as *;
+
+.noRecordContent {
+  color: $noRecordRed;
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
+}

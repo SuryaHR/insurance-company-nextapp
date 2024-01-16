@@ -1,0 +1,63 @@
+.root {
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  row-gap: 16px;
+
+  label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .descriptionDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    column-gap: 16px;
+    margin-top: 20px;
+    .imageDiv {
+      max-height: 125px;
+      width: 100%;
+      height: 123px;
+      max-width: 200px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding: 3px;
+        margin: auto;
+        border: 1px solid #c7ccd0;
+      }
+    }
+  }
+  .formGroup {
+    width: 100%;
+    .formControl {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 435px;
+      .descField {
+        resize: horizontal;
+        height: 65px;
+        padding: 2px;
+      }
+    }
+  }
+  .replaceDetailDiv {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    .replaceDetailFields {
+      display: flex;
+      flex-direction: row;
+      column-gap: 16px;
+    }
+  }
+  .divider {
+    margin: 10px 0;
+  }
+}

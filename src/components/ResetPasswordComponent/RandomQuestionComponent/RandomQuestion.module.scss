@@ -1,0 +1,11 @@
+@use "@/scss/_size.scss" as *;
+
+.questionContainer {
+  display: flex;
+  gap: $size_md;
+  align-items: center;
+}
+
+.label {
+  display: inline-block;
+}

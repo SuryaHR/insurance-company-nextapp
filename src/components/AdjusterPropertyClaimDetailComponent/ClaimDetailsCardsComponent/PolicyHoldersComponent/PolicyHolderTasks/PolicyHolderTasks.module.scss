@@ -1,0 +1,21 @@
+.Container {
+  display: flex;
+  border-bottom: 1px solid #e4e8eb;
+  cursor: pointer;
+}
+.Container:hover {
+  background-color: #d8dce0;
+}
+.labelStyle {
+  font-size: 11px;
+  color: #666565;
+  display: flex;
+}
+.labelStatus {
+  font-size: 11px;
+  color: #666565;
+  // font-weight: 100;
+  display: flex;
+  color: #337ab8;
+  text-transform: capitalize;
+}

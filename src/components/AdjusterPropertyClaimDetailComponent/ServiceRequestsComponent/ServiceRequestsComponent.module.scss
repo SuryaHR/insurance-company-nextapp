@@ -1,0 +1,32 @@
+@use "@/scss/colors.scss" as *;
+
+.serviceHeaderContainer {
+  border-radius: 0px;
+  border-bottom: 1px solid #666;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-bottom: 4px;
+
+  .serviceHeader {
+    font-size: 18px;
+    padding: 1px;
+    border-bottom: none;
+  }
+}
+.serviceRequestContainer {
+  background-color: $astral;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .serviceRequestContentContainer {
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+.newServiceRequestBtn {
+  margin-left: 0px;
+  width: auto;
+  min-height: 28px;
+}

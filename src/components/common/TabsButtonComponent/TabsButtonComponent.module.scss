@@ -1,0 +1,62 @@
+@use "@/scss/colors.scss" as *;
+
+.tabList {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 5px 16px;
+  color: $astral;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-weight: 500;
+
+  &:not(:last-child) {
+    border-right: none;
+  }
+}
+
+.withBorders .tab {
+  border-bottom: none;
+  // border-top: 1px solid #ccc;
+  // border-right: 1px solid #ccc;
+  // border-left: 1px solid #ccc;
+}
+
+.withoutBorders .tab {
+  border: none;
+}
+.tab.active {
+  border-top: 3px solid $astral;
+  background-color: #f1ecec;
+  color: $lightBlack;
+  // border-left: 1px solid #ccc;
+}
+
+.tab:hover {
+  background-color: #f1ecec;
+}
+
+.tab:first-child {
+  // border-right: 1px solid #ccc;
+}
+
+.tabContent {
+  // padding: 20px;
+  border: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 0;
+  position: relative;
+}
+
+.tabContainer {
+  // margin: 10px 2px 2px;
+  // margin: 10px;
+  margin-top: 10px;
+}

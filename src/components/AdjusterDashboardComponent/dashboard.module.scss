@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 223, 121, 1) 0%,
+    rgba(0, 188, 212, 1) 50%,
+    rgba(238, 130, 238, 1) 100%
+  );
+  color: #fff;
+  font-size: 20px;
+}
+.cardsStylAdjustAlert {
+  min-height: 388px;
+}
+.cardsStylAdjustScore {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: 9px;
+}
+.cardsStylClaims {
+  margin-left: -11px;
+}
+.card {
+  margin-top: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.attentionPendingContainer {
+  margin-top: 16px;
+}

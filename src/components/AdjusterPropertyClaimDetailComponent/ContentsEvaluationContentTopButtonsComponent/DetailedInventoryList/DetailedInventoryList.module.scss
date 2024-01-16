@@ -1,0 +1,43 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.detailListContainer {
+  background-color: $astral;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .detailListContentContainer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.contentListButtonDiv {
+  display: flex;
+  gap: 10px;
+  .contentListBtn {
+    margin-left: 0px;
+    width: max-content;
+    min-height: 28px;
+  }
+}
+
+.DetailedInventoryTableScrollContainer {
+  overflow: auto;
+}
+
+.dropDownInnerDiv {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 25px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.dropDownInnerDiv:hover {
+  background-color: lightblue;
+}

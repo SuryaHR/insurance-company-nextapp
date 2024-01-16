@@ -1,0 +1,45 @@
+.root {
+  background-color: lightcyan;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333;
+  border: 2px solid lightgray;
+  .heading {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    label {
+      font-weight: 600;
+      text-align: right;
+    }
+    .leftSideDiv {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 8px;
+      row-gap: 10px;
+      height: fit-content;
+    }
+    .rightSideDiv {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      .selectBox {
+        display: grid;
+        grid-template-columns: 90px 1fr auto;
+        align-items: center;
+        column-gap: 8px;
+      }
+    }
+  }
+}
