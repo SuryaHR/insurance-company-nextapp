@@ -7,7 +7,7 @@ pipeline {
     }
 
     tools {
-        nodejs 'NodeJS 20.11.0'  // Use the name you provided in the NodeJS configuration
+        nodejs 'Nodejs20'  // Use the name you provided in the NodeJS configuration
     }
     
     stages{
