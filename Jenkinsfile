@@ -22,37 +22,40 @@ pipeline {
 		stage('Content Replacement') {
             steps {
                 script {
-                    // Execute content replacements using the provided configuration
-                    contentReplace(configs: [
-                        fileContentReplaceConfig(
-                            configs: [
-                                fileContentReplaceItemConfig(
-                                    search: 'INSURANCE_CARRIER',
-                                    replace: '"The-Next-Insurance-Company"',
-                                    matchCount: 1,
-                                    verbose: false
-                                ),
-                                fileContentReplaceItemConfig(
-                                    search: 'SERVER_ADDRESS_KEY',
-                                    replace: '"http://173.255.198.245:8080"',
-                                    matchCount: 1,
-                                    verbose: false
-                                ),
-                                fileContentReplaceItemConfig(
-                                    search: 'XORIGINATOR_KEY',
-                                    replace: '"http://173.255.198.245:8080/next"',
-                                    matchCount: 1,
-                                    verbose: false
-                                )
-                            ],
-                            fileEncoding: 'UTF-8',
-                            lineSeparator: 'Unix',
-                            filePath: '.env.production'
-                        )
+                    // Use the correct syntax for contentReplace step
+                    contentReplace(delegate: [
+                        contentReplaceItem(configs: [
+                            fileContentReplaceConfig(
+                                configs: [
+                                    fileContentReplaceItemConfig(
+                                        search: 'INSURANCE_CARRIER',
+                                        replace: '"The-Next-Insurance-Company"',
+                                        matchCount: 1,
+                                        verbose: false
+                                    ),
+                                    fileContentReplaceItemConfig(
+                                        search: 'SERVER_ADDRESS_KEY',
+                                        replace: '"http://173.255.198.245:8080"',
+                                        matchCount: 1,
+                                        verbose: false
+                                    ),
+                                    fileContentReplaceItemConfig(
+                                        search: 'XORIGINATOR_KEY',
+                                        replace: '"http://173.255.198.245:8080/next"',
+                                        matchCount: 1,
+                                        verbose: false
+                                    )
+                                ],
+                                fileEncoding: 'UTF-8',
+                                lineSeparator: 'Unix',
+                                filePath: '.env.production'
+                            )
+                        ])
                     ])
                 }
             }
         }
+
     	
     	stage('Build') {
     		steps {
