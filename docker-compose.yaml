@@ -9,6 +9,14 @@ services:
     networks:
       - next
     container_name: next-container
+
+  evolution-app:
+    image: evolution-app:latest
+    ports:
+      - "5000:3000"
+    networks:
+      - next
+    container_name: evolution-container
     
   nginx:
     build: 
@@ -23,6 +31,7 @@ services:
     container_name: nginx-container
     depends_on:
       - next-app
+      - evolution-app
 
 networks:
   next:
