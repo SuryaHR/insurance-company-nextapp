@@ -33,7 +33,7 @@ services:
       - next-app
 
   nginx1:
-    image: nginx:v1
+    image: nginx:v2
     volumes:
       - "./evolution.conf:/etc/nginx/conf.d/evolution.conf"
     ports:
