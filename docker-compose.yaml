@@ -19,7 +19,7 @@ services:
       - "nginx.conf:/etc/nginx/conf.d/nginx.conf"
     networks:
       - next
-    depends-on:
+    depends_on:
       - next-app
 
 networks:
