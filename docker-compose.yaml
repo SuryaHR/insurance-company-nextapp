@@ -32,17 +32,6 @@ services:
     depends_on:
       - next-app
 
-  nginx1:
-    image: nginx:v2
-    volumes:
-      - "./evolution.conf:/etc/nginx/conf.d/evolution.conf"
-    ports:
-      - "81:81"
-    networks:
-      - next
-    container_name: evolution-nginx
-    depends_on:
-      - evolution-app
 networks:
   next:
     driver: bridge
