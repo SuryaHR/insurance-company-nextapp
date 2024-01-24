@@ -10,7 +10,9 @@ services:
       - next
     
     nginx:
-      image: nginx:v1
+      build: 
+        context: nginx
+        dockerfile: dockerfile
       ports:
         - "80:80"
       volumes:
