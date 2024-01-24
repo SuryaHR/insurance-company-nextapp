@@ -35,7 +35,7 @@ services:
     nginx1:
       image: nginx:alpine
       volumes:
-        - "./evolution.conf:/etc/nginx/conf.d/default.conf
+        - "./evolution.conf:/etc/nginx/conf.d/default.conf"
       ports:
         - "81:81"
       networks:
