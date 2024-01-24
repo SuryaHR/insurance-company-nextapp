@@ -32,15 +32,15 @@ services:
     depends_on:
       - next-app
 
-    nginx1:
-      image: nginx:alpine
-      volumes:
-        - "./evolution.conf:/etc/nginx/conf.d/default.conf"
-      ports:
-        - "81:81"
-      networks:
-        - next
-      container_name: evolution-nginx
+  nginx1:
+    image: nginx:alpine
+    volumes:
+      - "./evolution.conf:/etc/nginx/conf.d/default.conf"
+    ports:
+      - "81:81"
+    networks:
+      - next
+    container_name: evolution-nginx
 networks:
   next:
     driver: bridge
