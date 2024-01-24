@@ -9,18 +9,18 @@ services:
     networks:
       - next
     
-    nginx:
-      build: 
-        context: .
-        dockerfile: dockerfile
-      ports:
-        - "80:80"
-      volumes:
-        - "nginx.conf:/etc/nginx/conf.d/nginx.conf"
-      networks:
-        - next
-      depends-on:
-        - next-app
+  nginx:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - "nginx.conf:/etc/nginx/conf.d/nginx.conf"
+    networks:
+      - next
+    depends-on:
+      - next-app
 
 networks:
   next:
