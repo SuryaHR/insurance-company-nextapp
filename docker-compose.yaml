@@ -8,6 +8,7 @@ services:
       - "3000:3000"
     networks:
       - next
+    container_name: next-container
     
   nginx:
     build: 
@@ -19,6 +20,7 @@ services:
       - "./nginx.conf:/etc/nginx/conf.d/nginx.conf"
     networks:
       - next
+    container_name: nginx-container
     depends_on:
       - next-app
 
