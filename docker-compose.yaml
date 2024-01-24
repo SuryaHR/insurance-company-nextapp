@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+
+next-app:
+  build: .  
+  image: next-app:v1
+  ports:
+    - "3000:3000"
+  networks:
+    - next
+    
+  nginx:
+    image: nginx:v1
+    ports:
+      - "80:80"
+    volumes:
+      - "nginx.conf:/etc/nginx/conf.d/nginx.conf"
+    networks:
+      - next
+    depends-on:
+      - next-app
+
+networks:
+  next:
+    driver: bridge
