@@ -3,7 +3,7 @@ services:
 
   next-app:
     build: .  
-    image: next-app:v1
+    image: next-app
     ports:
       - "3000:3000"
     networks:
