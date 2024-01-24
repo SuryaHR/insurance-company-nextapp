@@ -14,7 +14,7 @@ ENTRYPOINT ["npm","start"]
 
 FROM nginx:alpine
 
-COPY /home/sakhaglobal/next.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
