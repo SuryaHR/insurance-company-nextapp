@@ -10,6 +10,8 @@ COPY . /app
 
 RUN npm run build
 
+ENTRYPOINT ["npm","start"]
+
 FROM nginx:alpine
 
 COPY /home/sakhaglobal/next.conf /etc/nginx/conf.d/default.conf
