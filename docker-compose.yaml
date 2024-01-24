@@ -41,6 +41,8 @@ services:
     networks:
       - next
     container_name: evolution-nginx
+    depends_on:
+      - evolution-app
 networks:
   next:
     driver: bridge
