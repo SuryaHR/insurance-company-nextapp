@@ -37,7 +37,7 @@ services:
     volumes:
       - "./evolution.conf:/etc/nginx/conf.d/evolution.conf"
     ports:
-      - "81:80"
+      - "81:81"
     networks:
       - next
     container_name: evolution-nginx
