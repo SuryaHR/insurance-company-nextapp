@@ -26,7 +26,7 @@ services:
       - "80:80"
     volumes:
       - "./nginx.conf:/etc/nginx/conf.d/nginx.conf"
-      - "./evolution.conf:/etc/nginx/conf.d/evolution.conf
+      - "./evolution.conf:/etc/nginx/conf.d/evolution.conf"
     networks:
       - next
     container_name: nginx-container
