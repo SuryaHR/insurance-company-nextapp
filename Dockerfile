@@ -27,7 +27,7 @@ COPY . .
 RUN yarn build
 
 # Copy Nginx configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY evolution.conf /etc/nginx/conf.d/default.conf
 
 # Expose the port that Nginx will run on
 EXPOSE 81
