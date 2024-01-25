@@ -33,4 +33,4 @@ COPY evolution.conf /etc/nginx/conf.d/default.conf
 EXPOSE 81
 
 # Start Nginx and node application
-CMD ["sh", "-c", "yarn dev & nginx -g 'daemon off;'"]
+CMD ["sh", "-c", "yarn start & nginx -g 'daemon off;'"]
