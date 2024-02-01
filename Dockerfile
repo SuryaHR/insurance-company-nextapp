@@ -30,7 +30,7 @@ RUN yarn build
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose the port that Nginx will run on
-EXPOSE 81
+EXPOSE 82
 
 # Start Nginx and node application
 CMD ["sh", "-c", "yarn start & nginx -g 'daemon off;'"]
