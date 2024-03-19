@@ -1,0 +1,60 @@
+@use "@/scss/colors.scss" as *;
+
+.form-control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  .error-field {
+    border-color: var(--errorRed);
+    &:active,
+    &:focus {
+      border-color: var(--errorRed);
+    }
+  }
+
+  .error-msg {
+    text-align: left;
+    font-size: 13px;
+    color: var(--errorRed);
+  }
+  .reactSelectContainer {
+    .disabled {
+      background-color: var(--grey3);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+.indicatorSeparator {
+  display: none;
+}
+
+.menu {
+  top: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  box-shadow:
+    0 0 0 1px hsla(0, 0%, 0%, 0.1),
+    0 4px 11px hsla(0, 0%, 0%, 0.1);
+  margin-bottom: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+.clearAllAnchor {
+  margin-bottom: 8px;
+  font-size: 15px;
+  text-shadow: none;
+  color: var(--astral);
+  padding-left: 7px;
+
+  &:hover {
+    cursor: pointer;
+    outline: 0;
+    color: var(--blueJay);
+  }
+}

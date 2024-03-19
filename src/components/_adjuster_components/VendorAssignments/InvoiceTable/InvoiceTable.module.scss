@@ -1,0 +1,93 @@
+@use "@/scss/colors.scss" as *;
+
+.tableStyle {
+  border: 1px solid var(--mystic);
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.theadtyle {
+  border-collapse: collapse;
+}
+
+.tBodyStyle {
+  border-collapse: collapse;
+}
+
+.trStyle {
+  border-collapse: collapse;
+}
+
+.thStyle {
+  border-top: 0;
+  background: var(--sundayGrey);
+  vertical-align: top;
+  border-bottom: 0;
+  padding: 4px;
+  line-height: unset;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid var(--mystic);
+  border-collapse: collapse;
+  cursor: pointer;
+  width: 5%;
+  text-align: left;
+}
+
+.tdStyle {
+  padding: 4px;
+  line-height: unset;
+  border: 1px solid var(--mystic);
+  vertical-align: top;
+  font-size: 11px;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 5%;
+  text-align: left;
+}
+
+.no-data {
+  color: var(--errorRed);
+}
+
+.vendorName {
+  text-align: center;
+}
+
+.vendorNameCont {
+  background-color: var(--grey1);
+  text-align: start;
+  padding: 5px 10px;
+  font-size: 11px;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.fontWeiBold {
+  font-weight: "bold";
+}
+
+.buttonCss {
+  border: 1px solid var(--lightBlue2);
+  color: var(--lightBlue2);
+  background: none;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 5px;
+  padding: 4px 12px;
+  font-size: 13px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.buttonCss:hover {
+  color: var(--white);
+  background: var(--lightBlue2);
+}

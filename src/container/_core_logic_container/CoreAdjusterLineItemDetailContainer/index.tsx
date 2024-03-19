@@ -1,0 +1,3 @@
+import CoreAdjusterLineItemDetailContainer from "./CoreAdjusterLineItemDetailContainer";
+
+export default CoreAdjusterLineItemDetailContainer;

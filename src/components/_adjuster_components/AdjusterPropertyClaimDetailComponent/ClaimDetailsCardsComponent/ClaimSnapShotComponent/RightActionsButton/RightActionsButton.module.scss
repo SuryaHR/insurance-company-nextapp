@@ -1,0 +1,20 @@
+@use "@/scss/colors.scss" as *;
+
+.actionBtnContainer {
+  color: var(--astral);
+  cursor: pointer;
+  .editActionBtn {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .actionBtns {
+    display: flex;
+    gap: 5px;
+    .linkBtnStyle {
+      padding: 0;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+import CoreAdjusterPropertyClaimDetailContainer from "./CoreAdjusterPropertyClaimDetailContainer";
+
+export default CoreAdjusterPropertyClaimDetailContainer;

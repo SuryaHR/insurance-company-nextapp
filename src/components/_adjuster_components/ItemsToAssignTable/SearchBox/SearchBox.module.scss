@@ -1,0 +1,23 @@
+.textAddStyle {
+  font-size: 13px;
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 30px;
+  margin-top: 2px;
+}
+
+.addStyleContainer {
+  display: flex;
+  margin-right: 25px;
+  width: 350px;
+  // align-items: center;
+}
+.selectWidth {
+  width: 80%;
+  z-index: 999;
+}
+
+.selectOption {
+  padding-left: 20px;
+}

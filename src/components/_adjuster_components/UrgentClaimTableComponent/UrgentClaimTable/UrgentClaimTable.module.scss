@@ -1,0 +1,28 @@
+@use "@/scss/colors.scss" as *;
+
+.claimTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.tableHeading {
+  color: var(--doveGray);
+  font-size: 18px;
+  padding: 0px 0px 0px 5px;
+}
+.divider {
+  margin: 16px 0 0;
+}
+
+.claimContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .claimContentContainer {
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}

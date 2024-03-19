@@ -1,0 +1,20 @@
+.searchbox {
+  > div {
+    background-color: var(--astral);
+    color: var(--white);
+    border: none;
+    border-bottom: 1px solid var(--grey6);
+    // border-radius: 0;
+    svg {
+      color: var(--white) !important;
+    }
+    input {
+      background: var(--astral);
+      color: var(--white);
+
+      input::placeholder {
+        color: var(--white) !important;
+      }
+    }
+  }
+}

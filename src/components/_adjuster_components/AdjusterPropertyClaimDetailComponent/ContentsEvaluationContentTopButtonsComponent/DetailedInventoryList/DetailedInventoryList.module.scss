@@ -1,0 +1,64 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.detailListContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .detailListContentContainer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: inherit;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px 10px;
+  }
+}
+
+.contentListButtonDiv {
+  display: flex;
+  gap: 10px;
+  .contentListBtn {
+    margin-left: 0px;
+    width: max-content;
+    min-height: 28px;
+  }
+}
+
+.DetailedInventoryTableScrollContainer {
+  overflow: auto;
+}
+
+.dropDownInnerDiv {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px 25px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.dropDownInnerDiv:hover {
+  background-color: lightblue;
+}
+
+.OutsideClickHandlerDiv {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: auto;
+  > div:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+  }
+
+  .toolTipClass {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0px;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 2px #888888;
+  }
+}

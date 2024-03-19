@@ -1,0 +1,166 @@
+@use "@/scss/colors.scss" as *;
+
+.buttonRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+  padding-right: 12px;
+}
+
+.labelTextLeft {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.labelTextLeftBold {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.labelTextRight {
+  text-align: left;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 400;
+}
+
+.assignmentsCont {
+  padding: 20px;
+}
+
+.qpf,
+.qpb {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tableCont {
+  margin-top: 10px;
+}
+
+.additComme,
+.replaceCostDet {
+  border: none;
+  padding: 12px 15px 15px 15px;
+  border-radius: 8px;
+}
+
+.vendorNoteHead {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.vendorCommDesc {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.buttonCss {
+  padding: 2px 12px;
+  font-size: 13px;
+  background-color: var(--grey3);
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.reactTable table th {
+  background: var(--astral);
+}
+
+.linesText {
+  font-size: 15px;
+  color: var(--doveGray);
+  font-weight: 400;
+}
+
+.totalInputFields {
+  height: 25px;
+  width: 150px;
+  text-align: end;
+  padding: 2px;
+}
+
+.totalInputFields:disabled {
+  background-color: var(--ashtrayWhite);
+  opacity: 1;
+}
+
+.paddingBottom20 {
+  padding-bottom: 20px;
+}
+
+.paddingTB5 {
+  padding: 5px 0;
+}
+
+.colorRed {
+  color: var(--errorRed);
+}
+
+.paddingTop10 {
+  padding-top: 10px;
+}
+
+.hr1 {
+  margin: 10px 0 15px 0;
+}
+
+.hr2 {
+  margin: 0px 0px 10px 0px;
+}
+
+.hr3 {
+  margin: 10px 0px 10px 0px;
+}
+
+.hr4 {
+  margin: 0px 0px 10px 0px;
+}
+
+.modalWidth {
+  width: 800px;
+}
+
+.modalWidth > div:nth-child(2) {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modalHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cyanBlue);
+  color: var(--white);
+  border-bottom: 1px solid var(--grey3);
+  padding: 8px 12px;
+  text-align: center;
+  position: relative;
+  border-radius: 8px;
+
+  div {
+    text-align: center;
+  }
+}

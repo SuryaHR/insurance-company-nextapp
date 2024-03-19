@@ -1,0 +1,20 @@
+@use "@/scss/colors.scss" as *;
+
+.stickyContainer {
+  position: sticky;
+  top: 35px;
+  z-index: 9;
+  background-color: var(--white);
+  // box-shadow: 0 8px 8px -6px rgba(0, 0, 0, 0.4);
+  .headingContainer {
+    margin-top: 10px;
+    font-weight: 400;
+    padding-left: 0;
+  }
+  .headingTxt {
+    color: var(--doveGray);
+    padding: 1px;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+}

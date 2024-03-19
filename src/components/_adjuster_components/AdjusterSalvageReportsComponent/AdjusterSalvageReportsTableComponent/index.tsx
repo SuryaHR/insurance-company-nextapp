@@ -1,0 +1,3 @@
+import AdjusterSalvageReportsTableComponent from "./AdjusterSalvageReportsTableComponent";
+
+export default AdjusterSalvageReportsTableComponent;

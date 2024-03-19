@@ -1,0 +1,83 @@
+@use "@/scss/colors.scss" as *;
+
+.assignmentsCont {
+  padding: 20px;
+}
+
+.tableTop {
+  margin-top: 10px;
+  height: 13px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.cardBorderTop {
+  border: 1px solid var(--charlesGrey);
+  border-top: 3px solid var(--lightBlue2);
+  box-shadow: 0 6px 6px -6px var(--grimmysGrey);
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  width: 241px;
+  padding: 20px;
+  display: inline-block;
+  height: 137px;
+  margin-right: 20px;
+}
+
+.totVenInvoCount {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.totVenInvoHead {
+  font-size: 14px;
+  color: var(--mineShaft);
+  display: block;
+}
+
+.totVenInvoSta {
+  font-size: 12px;
+}
+
+.totalDollInvoice {
+  font-size: 14px;
+  color: var(--mineShaft);
+  display: block;
+}
+
+.totalDollInvoiceCount {
+  font-size: 30px;
+  font-weight: 100;
+  color: var(--mineShaft);
+}
+
+.cardCont {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.h2Replacement {
+  display: inline-block;
+}
+
+.h6Replacement {
+  display: inline-block;
+}
+
+.marginTop18 {
+  margin-top: 18px;
+}
+
+.colorGreen {
+  color: var(--greenNature);
+}
+
+.colorRed {
+  color: var(--errorRed);
+}
+
+.modalWidth {
+  width: 60%;
+}

@@ -1,0 +1,14 @@
+@use "@/scss/colors.scss" as *;
+.textLeftAlign {
+  color: var(--noRecordRed);
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: left;
+}
+.noRecordContent {
+  color: var(--noRecordRed);
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: capitalize;
+}

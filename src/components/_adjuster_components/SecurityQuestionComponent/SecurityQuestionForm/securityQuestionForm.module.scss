@@ -1,0 +1,28 @@
+@use "@/scss/_size.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.formContainer {
+  border: 1px solid var(--mystic);
+  padding: $size_md;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.5714px;
+  display: flex;
+  flex-direction: column;
+  gap: $size_md;
+  .formGroups {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 $size_lg;
+    padding-right: 25%;
+    .formGroup {
+      gap: 10px;
+    }
+  }
+}
+.actionBtn {
+  width: fit-content;
+  margin-left: auto;
+  padding: 0 24px;
+}

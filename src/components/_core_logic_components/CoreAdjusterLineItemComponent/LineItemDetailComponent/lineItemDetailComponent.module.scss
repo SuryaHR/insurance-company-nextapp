@@ -1,0 +1,45 @@
+@use "@/scss/colors" as *;
+
+.root {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 16px;
+  .topItemSection {
+    position: relative;
+  }
+  .topItemSection,
+  .bottomItemSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+}
+
+.deleteModalOverlay {
+  .deleteModalBtn {
+    display: flex;
+    justify-content: flex-end;
+    // column-gap: 16px;
+    width: 100%;
+    button {
+      width: 50px;
+    }
+  }
+  .deleteModalMessage {
+    padding: 24px 8px;
+    font-size: 13px;
+    color: var(--mineShaft);
+  }
+}
+
+.modalContainer {
+  align-items: start;
+  .modalContent {
+    width: 600px;
+    position: relative;
+    top: 30px;
+  }
+}

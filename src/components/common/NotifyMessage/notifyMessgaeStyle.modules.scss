@@ -1,0 +1,14 @@
+@use "@/scss/colors.scss" as *;
+
+.success {
+  background-color: var(--notifySuccessColor);
+  font-weight: 600;
+}
+.warning {
+  background-color: var(--notifyWarningColor);
+  font-weight: 600;
+}
+.error {
+  background-color: var(--notifyDangerColor);
+  font-weight: 600;
+}

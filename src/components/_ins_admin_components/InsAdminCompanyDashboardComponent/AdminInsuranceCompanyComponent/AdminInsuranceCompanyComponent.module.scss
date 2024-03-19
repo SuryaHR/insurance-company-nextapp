@@ -1,0 +1,9 @@
+@use "@/scss/colors.scss" as *;
+.container {
+  display: flex;
+  justify-content: center;
+}
+.headingText {
+  font-size: 18px;
+  color: var(--doveGray);
+}

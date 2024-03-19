@@ -1,0 +1,39 @@
+@use "@/scss/colors" as *;
+
+.root {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  .searchBox {
+    position: relative;
+    background-color: var(--white);
+    border: 2px solid var(--grey6);
+    border-radius: 5px;
+    padding: 2px 5px 2px 30px;
+
+    width: 100%;
+    height: 38px;
+    max-width: 500px;
+    // margin-top: 10px;
+    input {
+      border: none;
+      outline: none;
+      // width: calc(100% - 25px);
+      width: 100%;
+      height: 100%;
+      padding: 2px;
+    }
+    .searchIcon {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--grey7);
+    }
+  }
+  .selectFormControl {
+    max-width: 200px;
+    width: 100%;
+  }
+}

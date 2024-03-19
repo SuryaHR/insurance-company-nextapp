@@ -1,0 +1,218 @@
+@use "@/scss/mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.addItemContainer {
+  position: relative;
+  height: 60vh;
+  max-height: 570px;
+  overflow-y: auto;
+  @include customscrollbar(var(--lightGrey2), 6px, true);
+
+  form {
+    padding: 15px;
+  }
+}
+.loginForm__form {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  .link {
+    width: fit-content;
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.inputBoxRoomInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5px;
+}
+.genericSelect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+.inputBoxWidth {
+  width: 100%;
+  // height: 50px;
+}
+.inputBoxAlign {
+  text-align: right;
+}
+.centerAlign {
+  align-items: center;
+}
+.centerAlignCrossIcon {
+  display: flex;
+  align-items: center;
+}
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+}
+.file_input_wrapper {
+  border: 1px solid black;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file_input_wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file_input_wrapper .btn_upload {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgb(200, 196, 196);
+  color: var(--black);
+  cursor: pointer;
+}
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+}
+.imagePreviewDiv {
+  width: 400px;
+  height: 400px;
+}
+
+.contentCenter {
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: red;
+}
+.arrowContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  .arrowLeft {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+    left: 0;
+  }
+  .arrowRight {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -50%);
+    right: 0;
+  }
+  .leftDisable {
+    cursor: not-allowed;
+  }
+  .rightDisable {
+    cursor: not-allowed;
+  }
+}
+//commented
+.labelClassname {
+  font-size: 14px;
+}
+
+.margin {
+  margin-bottom: 5px;
+}
+
+.attachmentBox {
+  height: 160px;
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin-right: 10px;
+  // margin-left: 5px;
+}
+.formControl {
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField {
+      height: 20px;
+      display: flex;
+      gap: 2px;
+    }
+  }
+}
+.formControl1 {
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper1 {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField1 {
+      display: flex;
+      gap: 3px;
+      height: 20px;
+    }
+  }
+}
+.labelClassname {
+  font-size: 13px;
+}
+.radioButtonWrapper {
+  display: flex;
+  gap: 20px;
+}
+.pointerCursor {
+  cursor: pointer;
+}
+.cancelLink {
+  cursor: pointer;
+  color: red;
+  &:hover {
+    color: maroon;
+  }
+}
+.modalWidth {
+  width: 100%;
+}
+.addItemButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+}
+.infoIconContainer {
+  width: 18px;
+  height: 18px;
+  margin: auto;
+}
+.textClassName {
+  white-space: unset;
+}

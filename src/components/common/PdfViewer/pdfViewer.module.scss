@@ -1,0 +1,27 @@
+@use "@/scss/colors.scss" as *;
+
+.pdfPages {
+  position: relative;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px grey;
+    background-color: #dddddd75;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--grey6);
+    border-radius: 10px;
+  }
+}
+.pageNumberDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  border-bottom: 1px solid var(--grey4);
+}

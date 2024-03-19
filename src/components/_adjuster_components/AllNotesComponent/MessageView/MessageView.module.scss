@@ -1,0 +1,93 @@
+@use "@/scss/colors.scss" as *;
+
+.profileIcon {
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 5px auto;
+  padding: 16px 11px;
+  border-radius: 30px;
+}
+
+.p_0 {
+  padding: 0;
+}
+
+.messageText {
+  display: block;
+  background: var(--chatBlue) none repeat scroll 0 0;
+  color: var(--white);
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin: 0 0 0 auto;
+  white-space: pre-wrap;
+}
+
+.messageByDate {
+  display: block;
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  color: grey1;
+}
+
+.messageCont {
+  float: right;
+  padding: 10px;
+  width: fit-content;
+  margin: 0 0 0 auto;
+}
+
+.messageRecCont {
+  padding: 10px;
+  width: fit-content;
+  display: inline-block;
+}
+
+.messageTextRec {
+  display: block;
+  background: var(--gainsborogray) none repeat scroll 0 0;
+  color: var(--black);
+  padding: 5px;
+  border-radius: 3px;
+  margin: 0 0 0 auto;
+  white-space: pre-wrap;
+}
+
+.messageByDateRec {
+  display: block;
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  color: var(--grey1);
+}
+
+.profileIconCont {
+  display: inline-block;
+}
+
+.DocViewListSty {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.f_r {
+  float: right;
+}
+
+.attDoc {
+  border: 1px solid var(--grey3);
+  height: auto;
+}
+
+.attTitle {
+  display: block;
+  text-shadow: none;
+  color: var(--astral);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}

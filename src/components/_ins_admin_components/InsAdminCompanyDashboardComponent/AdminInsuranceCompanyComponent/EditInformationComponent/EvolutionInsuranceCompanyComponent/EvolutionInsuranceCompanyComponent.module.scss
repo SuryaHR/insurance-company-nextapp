@@ -1,0 +1,109 @@
+@use "@/scss/colors.scss" as *;
+
+.PolicyholderText {
+  position: relative;
+  margin-top: 30px;
+}
+
+.customTitleClassname {
+  position: relative;
+  color: var(--doveGray);
+  font-size: 18px;
+  font-weight: 500;
+}
+.btnSection {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.insComContainer {
+  display: flex;
+}
+.formDiv {
+  display: flex;
+  align-items: center;
+}
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+}
+.imageUploadDiv {
+  display: flex;
+}
+.companyLogoImage {
+  width: 150px;
+  height: 150px;
+}
+.colorContainer {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--paleBlue);
+}
+.companyLogoImageContainer {
+  flex: 1;
+  width: 90%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 7px;
+}
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+}
+.uploadFileBtn {
+  height: "25px";
+  justify-content: center;
+  align-items: "center";
+}
+.imageTitle {
+  margin-top: 45px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  color: var(--lightBlue2);
+}
+.bgImageTitle {
+  margin-bottom: 5px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  color: var(--lightBlue2);
+}
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.cancelBtn {
+  width: 90%;
+}
+.backGroundImageContainer {
+  display: flex;
+}
+.crossIcon {
+  position: relative;
+  right: -84%;
+  margin-bottom: -15px;
+}
+.hrColor {
+  border-color: var(--white);
+}
+.fileUpload {
+  background-color: var(--grey3);
+  color: var(--mineShaft);
+  justify-content: right;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: auto;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}

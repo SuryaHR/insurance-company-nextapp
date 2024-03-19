@@ -1,0 +1,56 @@
+.container {
+  height: 200px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.container:hover {
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4);
+}
+.upperSection {
+  display: flex;
+  height: 60%;
+}
+.lowerSection {
+  display: flex;
+}
+.imageSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detailsSection {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.labelContainer {
+  display: flex;
+}
+.detailsContainer {
+  display: flex;
+  align-items: center;
+}
+.spanText {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.label {
+  font-weight: 600;
+  font-size: 13px;
+}
+.labelValue {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 13px;
+}
+.designationValue {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+}
+.imageStyle {
+  height: 90px;
+  width: 90px;
+}

@@ -1,0 +1,61 @@
+@use "@/scss/colors.scss" as *;
+.container {
+  width: 100%;
+  border-bottom: 1px solid #a9a3a3;
+  cursor: pointer;
+  position: relative;
+}
+.imageContainer {
+  display: flex;
+  gap: 12px;
+  height: 32px;
+}
+.container::-webkit-scrollbar {
+  width: 0.5em;
+}
+.container:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.profileImageContainer {
+  img {
+    border-radius: 50%;
+  }
+}
+.textRight {
+  text-align: right;
+  font-size: 11px;
+  color: #666565;
+}
+.fontSize {
+  font-size: 13px;
+}
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--fadedBlue);
+}
+.textEllipsis {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  cursor: pointer;
+  color: #666565;
+}
+.popContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  // left: 25px;
+  font-size: 13px;
+  background-color: #cde8f1;
+  z-index: 999;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  padding: 2px;
+  margin-right: 10px;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}

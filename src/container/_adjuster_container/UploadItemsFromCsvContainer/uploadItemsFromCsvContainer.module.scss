@@ -1,0 +1,21 @@
+@use "@/scss/colors.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: 0 16px;
+  margin-top: 8px;
+  .divider {
+    margin: 16px 0 0;
+  }
+}
+
+.Wizard {
+  font-size: 18px;
+}
+
+.uploadContainer {
+  padding: 0px 10px 0px 10px;
+}

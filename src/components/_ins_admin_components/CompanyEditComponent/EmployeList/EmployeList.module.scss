@@ -1,0 +1,22 @@
+@use "@/scss/colors.scss" as *;
+
+.listContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .listContentContainer {
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+
+.employListActionBtn {
+  margin-left: 0px;
+  margin-right: 3px;
+  width: auto;
+  min-height: 28px;
+  margin-top: 10px;
+}

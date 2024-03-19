@@ -1,0 +1,108 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.container {
+  min-height: 550px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-top: 5px;
+  border: 1px solid var(--lightGrey);
+}
+
+.heading {
+  display: flex;
+  height: 35px;
+  color: var(--lightBlue4);
+  align-items: center;
+  font-size: 18px;
+  font-weight: 550;
+  background-color: var(--whiteSmoke);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.expandIcon {
+  color: var(--black);
+  margin: 0px 10px 0px 5px;
+  cursor: pointer;
+}
+
+.chatContainer {
+  // border: 1px solid orange;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  overflow-y: auto;
+  @include customscrollbar(var(--lightGrey2), 6px, true);
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.inputBox {
+  width: 94%;
+  margin: 5px;
+}
+
+.labelStyle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.textAreaStyle {
+  border-radius: 30px;
+  height: 60px;
+  width: 100%;
+  padding: 5px 22px;
+  border: 1px solid var(--black);
+}
+
+.attachmentIcon {
+  width: 3%;
+  display: flex;
+  align-items: center;
+  margin: 0px 2px 0px 2px;
+  padding-bottom: 10px;
+}
+
+.sendIcon {
+  width: 3%;
+  display: flex;
+  align-items: center;
+  margin: 0px 2px 0px 0px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.fileInputStyle {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  top: 105px;
+  left: 600px;
+  padding: 2px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 1px;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 15px;
+}
+
+.filePickedCont {
+  margin-bottom: 5px;
+}
+
+.iconColor {
+  color: var(--scarletRed);
+}
+
+.inlineItemsContainer {
+  display: inline-flex;
+  align-items: center;
+}

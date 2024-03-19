@@ -1,0 +1,24 @@
+.textAddStyle {
+  font-size: 13px;
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: 30px;
+  margin-top: 2px;
+}
+
+.addStyleContainer {
+  display: flex;
+  margin: 8px 0px;
+}
+
+.labelClassStyle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.selectOption {
+  padding-left: 20px;
+}

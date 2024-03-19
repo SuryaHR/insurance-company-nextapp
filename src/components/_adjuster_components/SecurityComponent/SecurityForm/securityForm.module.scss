@@ -1,0 +1,47 @@
+@use "@/scss/colors.scss" as *;
+.securityFormContainer {
+  border: 1px solid var(--mystic);
+  padding: 5px 25% 5px 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.5714px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 25px;
+    .formControl {
+      display: grid;
+      grid-template-columns: minmax(100px, 150px) 1fr;
+      gap: 16px;
+      align-items: baseline;
+      text-align: right;
+      text-transform: capitalize;
+      .inputFieldClassname {
+        border: 1px solid var(--grey4);
+      }
+    }
+  }
+}
+
+.passwordStrengthWrapper {
+  grid-template-columns: minmax(100px, 150px) 1fr;
+  gap: 16px;
+  display: grid;
+  .secondDiv {
+    grid-column: 2 / -1;
+    .strengthDiv {
+      height: 10px;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: lightgray;
+      .strengthBar {
+        height: 100%;
+      }
+    }
+  }
+}

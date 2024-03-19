@@ -1,0 +1,33 @@
+@use "@/scss/colors" as *;
+
+.addItemsContainer {
+  background-color: var(--astral);
+  min-height: 15px;
+  align-items: center;
+  margin-top: 5px;
+
+  .addItemsContentContainer {
+    height: inherit;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+  }
+}
+.selectItemsStyle {
+  margin-left: auto;
+}
+
+.searchItemsStyle {
+  max-width: 282px;
+  margin-right: 20px;
+}
+
+.styleTable {
+  margin-left: 10px;
+}
+
+.vendorsearchItemsStyle {
+  max-width: 467px;
+  margin-right: 20px;
+  margin-left: auto;
+}

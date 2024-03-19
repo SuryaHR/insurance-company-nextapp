@@ -1,0 +1,143 @@
+@use "@/scss/colors.scss" as *;
+
+.headerCont {
+  color: var(--white);
+  background-color: #007db8;
+  font-size: 14px;
+  padding: 4px 7px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.headArrowActionBtn {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.itemDetailCont {
+  text-align: center;
+  font-size: 13px;
+}
+
+.itemDetailMsgCont {
+  display: block;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.itemDetailMsg {
+  background: #ecb92d none repeat scroll 0 0;
+  color: var(--black);
+  padding: 6px 5px;
+  border-radius: 2px;
+  width: 40vw;
+  display: inline-block;
+  margin: 0 0 0 40vw;
+  vertical-align: top;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.itemDetailMsgSent {
+  background: var(--chatBlue) none repeat scroll 0 0;
+  color: var(--white);
+  padding: 6px 5px;
+  border-radius: 2px;
+  width: 40vw;
+  display: inline-block;
+  margin: 0 0 0 40vw;
+  vertical-align: top;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.itemDetailMsgReceived {
+  background: var(--gainsborogray) none repeat scroll 0 0;
+  color: var(--black);
+  padding: 6px 5px;
+  border-radius: 2px;
+  width: 40vw;
+  display: inline-block;
+  margin: 0 0 0 40vw;
+  vertical-align: top;
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dateCont {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.d_block {
+  display: block;
+}
+
+.updateUserName {
+  font-size: 14px;
+  text-align: center;
+}
+
+.itemDetailProfile {
+  display: inline-block;
+  width: fit-content;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.profileIcon {
+  margin: 0 32px;
+  display: block;
+}
+
+.attDoc {
+  border: 1px solid var(--grey3);
+  height: auto;
+}
+
+.attTitle {
+  display: block;
+  text-shadow: none;
+  color: var(--astral);
+  width: 80px;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.attCont {
+  display: block;
+  margin-left: 40vw;
+  margin-top: 5px;
+  width: fit-content;
+}
+
+.modalWidth {
+  width: 43%;
+}
+
+.DocViewListSty {
+  width: fit-content;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.showMoreLessBtn {
+  color: var(--white);
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}

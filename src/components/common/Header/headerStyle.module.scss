@@ -1,0 +1,157 @@
+@use "@/scss/colors.scss" as *;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: var(--astral);
+}
+.companyName {
+  font-size: 18px;
+  color: var(--lightBlue2);
+  font-weight: 300;
+}
+.menuItems {
+  display: none;
+}
+
+.toggleButton {
+  cursor: pointer;
+}
+.searchBox {
+  position: relative;
+  background-color: var(--white);
+  border: 2px solid var(--grey6);
+  border-radius: 5px;
+  padding: 5px;
+  width: 47%;
+  box-shadow: 2px 0px 2px 2px var(--grey6);
+  margin-left: 30px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--grey7);
+}
+
+.calendarIcon {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.helpText {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.signoutText {
+  margin-left: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+
+  .customTooltip {
+    background-color: var(--lightBlue2);
+    color: var(--astral);
+    padding: 0px;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 2px var(--lightGrey);
+  }
+}
+.calendar-container {
+  width: 30px;
+  height: 20px;
+}
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--astral);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 600;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--lightGrey);
+  img {
+    border-radius: 50%;
+  }
+}
+.bgTransparant {
+  background-color: transparent;
+}
+.userName {
+  margin-top: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media (max-width: 2560px) {
+  .menuItems {
+    display: none;
+  }
+  .toggleButton {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menuItems {
+    display: none;
+  }
+  .toggleButton {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+
+  .menuItems.show {
+    display: block;
+  }
+}
+
+.dropDownInnerDiv {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+
+.profileLink {
+  background-color: var(--white);
+  height: 40px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+.customTooltipContent {
+  width: 200px;
+}
+
+.avtar {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  gap: 5px;
+}

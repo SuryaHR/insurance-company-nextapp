@@ -1,0 +1,35 @@
+@use "@/scss/colors.scss" as *;
+
+.fieldRowContainer {
+  display: flex;
+  font-size: 13px;
+  margin: 2px 0;
+  justify-content: center;
+  gap: 5px;
+  .fieldSetContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    min-width: 30%;
+    margin: 5px;
+    border: 1px solid var(--mineShaft);
+    border-radius: 4px;
+    font-size: 11px;
+    .fieldSetLabel {
+      font-size: 11px;
+      padding: 0 4px;
+      color: var(--mineShaft);
+      font-weight: 600;
+    }
+    .fieldValue {
+      font-size: 12px;
+    }
+    .customInput {
+      border: none;
+      height: inherit;
+      padding: unset;
+      color: var(--mineShaft);
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.overlay {
+  align-items: start;
+  padding-top: 30px;
+
+  .modal {
+    transform: translateY(0);
+    margin-top: 24px;
+    animation-name: modalAnimate;
+    animation-duration: 0.5s;
+  }
+}
+
+@keyframes modalAnimate {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.modalFooter {
+  display: flex;
+  margin-left: auto;
+  gap: 8px;
+  align-items: center;
+}
+.modalBody {
+  font-size: 14px;
+}
+// .modalBody {
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 8px;
+//   padding: 12px;
+//   font-size: 14px;
+//   .heading {
+//     font-weight: 600;
+//   }
+//   .desc {
+//     font-size: 14px;
+//   }
+// }

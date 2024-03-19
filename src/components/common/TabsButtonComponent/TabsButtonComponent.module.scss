@@ -1,0 +1,46 @@
+@use "@/scss/colors.scss" as *;
+
+.tabList {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  flex-wrap: wrap;
+}
+.tab {
+  cursor: pointer;
+  padding: 5px 16px;
+  color: var(--astral);
+  transition: background-color 0.3s;
+  font-size: 14px;
+  border-top: 1px solid var(--grey6);
+  border-left: 1px solid var(--grey6);
+  border-right: 1px solid var(--grey6);
+  font-weight: 500;
+
+  &:not(:last-child) {
+    border-right: none;
+  }
+}
+.withBorders .tab {
+  border-bottom: none;
+}
+.withoutBorders .tab {
+  border: none;
+}
+.tab.active {
+  border-top: 3px solid var(--astral);
+  background-color: #f1ecec;
+  color: var(--lightBlack);
+}
+.tab:hover {
+  background-color: #f1ecec;
+}
+.tabContent {
+  border: 1px solid var(--grey6);
+  border-right: 1px solid var(--grey6);
+  border-radius: 0;
+  position: relative;
+}
+.tabContainer {
+  margin-top: 10px;
+}

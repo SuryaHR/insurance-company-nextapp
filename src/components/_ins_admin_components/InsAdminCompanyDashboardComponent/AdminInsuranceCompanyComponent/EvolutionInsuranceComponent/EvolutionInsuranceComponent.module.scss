@@ -1,0 +1,40 @@
+@use "@/scss/colors.scss" as *;
+
+.container {
+  display: flex;
+  height: 200px;
+  background-color: var(--lightblue);
+  margin-top: 5px;
+}
+.headingText {
+  font-size: 18px;
+  color: var(--doveGray);
+}
+.sectionRows {
+  display: flex;
+}
+.textStyle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--lightBlue2);
+}
+.textStyleValue {
+  font-size: 13px;
+  font-weight: 600;
+}
+.companyPageimageContainer {
+  flex: 1;
+  width: 50%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-right: 12px;
+}
+.companyPageimage {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}

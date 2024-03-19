@@ -1,0 +1,112 @@
+@use "@/scss/colors.scss" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.headingText {
+  font-size: 18px;
+  color: var(--doveGray);
+}
+
+.filterContainer {
+  height: 260px;
+  background-color: var(--lightblue);
+}
+
+.filterText {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.showSection {
+  display: flex;
+  margin: 4px 0px 4px 0px;
+  align-items: center;
+}
+
+.label {
+  position: relative;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.filterBtns {
+  display: flex;
+  width: 30%;
+}
+
+.claimInput {
+  width: 30%;
+}
+
+.filterBtns button {
+  border: none;
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.myButton {
+  background-color: var(--astral);
+  color: var(--white);
+}
+
+.filterButtons {
+  display: flex;
+  list-style: none;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: right;
+  margin: 0px 4px 0px 4px;
+}
+
+.datePickerInput {
+  width: 45%;
+}
+
+.datePickerInputRight {
+  width: 45%;
+}
+
+.btwMargin {
+  margin: 0% 5% 0% 5%;
+}
+
+.DatePickerZindex {
+  z-index: 4;
+}
+
+.claimStatusZIndex {
+  z-index: 3;
+}
+
+.selectBoxZindex {
+  z-index: 2;
+}
+
+.viewBysection {
+  display: flex;
+  margin: 4px 0px 4px 0px;
+}
+
+.tableTopsection {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.deleteModalBtn {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 16px;
+  width: 100%;
+}
+
+.exportBtn {
+  margin-left: 10px;
+}

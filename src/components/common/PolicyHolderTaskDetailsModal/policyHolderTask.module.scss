@@ -1,0 +1,45 @@
+@use "@/scss/colors.scss" as *;
+
+.inputBoxAlign {
+  text-align: right;
+}
+.upperContainer {
+  border-bottom: 1px solid var(--grey3);
+}
+.alignRight {
+  justify-content: right;
+}
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+}
+.text {
+  font-size: 13px;
+}
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.alignItems {
+  align-items: center;
+}
+
+.modalContainer {
+  align-items: start;
+}
+
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}
+
+.imageName {
+  color: var(--astral);
+  width: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}

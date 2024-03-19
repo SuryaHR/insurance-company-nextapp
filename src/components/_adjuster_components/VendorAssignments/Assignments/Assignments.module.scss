@@ -1,0 +1,51 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/_mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.assignmentsCont {
+  padding: 12px;
+}
+
+.itemsCont {
+  width: 100%;
+  margin: 20px;
+}
+
+.card:first-child {
+  margin-left: 30px;
+}
+
+.card {
+  -webkit-box-shadow: 0 6px 6px -6px var(--grimmysGrey);
+  -moz-box-shadow: 0 6px 6px -6px var(--grimmysGrey);
+  box-shadow: 0 6px 6px -6px var(--grimmysGrey);
+  text-align: center;
+  border: 1px solid var(--charlesGrey);
+  border-radius: 4px;
+  border-top: 3px solid var(--lightBlue2);
+  width: 165px;
+  display: inline-block;
+  margin-right: 25px;
+  min-height: 70px;
+  height: 70px;
+}
+
+.itemDetails {
+  font-size: 13px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-weight: 500;
+  min-height: 18px;
+  display: block;
+}
+
+.assignmentTable {
+  padding: 20px;
+}
+
+.container {
+  max-height: 286px;
+  overflow-y: auto;
+  padding-right: 4px;
+  @include customscrollbar(var(--lightGrey2), 6px, true);
+}

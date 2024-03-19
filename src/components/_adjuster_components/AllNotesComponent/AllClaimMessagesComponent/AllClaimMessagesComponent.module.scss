@@ -1,0 +1,16 @@
+@use "@/scss/colors.scss" as *;
+.container {
+  border: 1px solid var(--grey3);
+  margin-top: 5px;
+  display: flex;
+}
+.newMessageCont {
+  width: 30%;
+  margin: 4px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.chatCont {
+  transition: width 0.5s ease;
+  margin: 4px;
+}

@@ -1,0 +1,117 @@
+@use "@/scss/colors.scss" as *;
+
+.addItemsTitle {
+  background-color: var(--astral);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.newClaimBtn {
+  width: auto;
+  //   height: 30px;
+}
+
+.cancelButton {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--astral);
+  // float: right;
+  font-weight: 600;
+}
+
+.textAddStyle {
+  font-size: 13px;
+  color: var(--black);
+  font-weight: 600;
+  white-space: nowrap;
+  // margin-right: 0px;
+  margin-top: 2px;
+}
+
+//   .addStyleContainer {
+//     display: flex;
+//     align-items: center;
+//   }
+
+.selectContainer {
+  // width: auto;
+  z-index: 2;
+}
+
+.addItemsContainer {
+  background-color: var(--astral);
+  min-height: 15px;
+  // display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+
+  .addItemsContentContainer {
+    height: inherit;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+  }
+}
+.selectItemsStyle {
+  margin-left: auto;
+  // min-height: 10px;
+  // width: auto;
+}
+
+.searchItemsStyle {
+  max-width: 282px;
+  margin-right: 20px;
+  // margin-left: auto;
+}
+
+.styleTable {
+  margin-left: 10px;
+  // overflow-y: auto;
+}
+
+.vendorsearchItemsStyle {
+  max-width: 280px;
+  margin-right: 20px;
+  margin-left: auto;
+  // width: auto;
+}
+
+.textAreaSyle {
+  margin-left: 25px;
+}
+
+.textTextArea {
+  font-size: 13px;
+  color: gray;
+}
+.textarea {
+  outline: none;
+}
+.cardsStyle {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgb(221, 221, 221) 0px 3px 6px 0px;
+}
+.cardsStyle textarea {
+  border: 1px solid rgb(204, 204, 204);
+}
+
+@media only screen and (min-width: 2560px) {
+  .searchItemsStyle {
+    width: 360px;
+  }
+  .vendorsearchItemsStyle {
+    max-width: 519px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+}

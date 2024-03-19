@@ -1,0 +1,19 @@
+@use "@/scss/colors.scss" as *;
+
+.cardsStylAdjustCalims {
+  min-height: 100px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--mystic);
+  }
+  * {
+    font-weight: normal;
+  }
+}
+
+.dueStyle {
+  color: var(--errorRed);
+}

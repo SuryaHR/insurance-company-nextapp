@@ -1,0 +1,59 @@
+@use "@/scss/colors.scss" as *;
+
+.stickyContainer {
+  top: 35px;
+  background-color: var(--white);
+
+  .headingContainer {
+    margin-top: 10px;
+    font-weight: 400;
+    padding-left: 0;
+  }
+
+  .headingTxt {
+    color: var(--doveGray);
+    padding: 1px;
+    font-size: 18px;
+  }
+}
+
+.noMessCont {
+  padding: 10px;
+  padding: 20px;
+  text-align: center;
+  color: var(--errorRed);
+  background-color: var(--lightPeach);
+  font-size: 13px;
+}
+
+.buttonCss {
+  padding: 2px 12px;
+  font-size: 13px;
+  background-color: var(--grey3);
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 5px 0 5px auto;
+  display: block;
+}
+
+.modalContainer {
+  align-items: start;
+}
+
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}

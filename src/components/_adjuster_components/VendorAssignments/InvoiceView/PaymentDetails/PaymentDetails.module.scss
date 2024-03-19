@@ -1,0 +1,56 @@
+@use "@/scss/colors.scss" as *;
+
+.paddingTB5 {
+  padding: 5px 0;
+}
+
+.labelTextLeft {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.radioFormControl {
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+
+  .paymentMethodLabel {
+    display: inline-block;
+    width: fit-content;
+    font-size: 12px;
+  }
+
+  .inputWrapper {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 14px;
+      height: 14px;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.labelTextRight {
+  text-align: left;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 400;
+}
+
+.payMethodLabCls {
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+.addressInput {
+  padding: 0;
+  margin-bottom: 10px;
+}

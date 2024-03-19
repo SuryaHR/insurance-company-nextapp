@@ -1,0 +1,82 @@
+@use "@/scss/colors.scss" as *;
+
+.companyEditCont {
+  padding: 10px 0px;
+}
+
+.companyCont {
+  padding: 0 20px;
+}
+
+.companyEmpCont {
+  padding: 20px;
+}
+
+.paddingTB5 {
+  padding: 5px 0;
+}
+
+.labelTextLeft {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.labelTextLeftBold {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.labelTextRight {
+  text-align: left;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 400;
+}
+
+.paddingBottom20 {
+  padding-bottom: 20px;
+}
+
+.buttonRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+  padding-right: 12px;
+}
+
+.buttonCss {
+  padding: 2px 12px;
+  font-size: 13px;
+  background-color: var(--grey3);
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hrStyle {
+  color: var(--grey3);
+}
+
+.selectStateCont {
+  width: 50%;
+}

@@ -1,0 +1,78 @@
+@use "@/scss/colors" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.headingText {
+  font-size: 18px;
+  color: var(--doveGray);
+}
+.filterContainer {
+  height: 260px;
+  background-color: var(--lightblue);
+}
+.filterText {
+  font-weight: 600;
+  font-size: 18px;
+}
+.showSection {
+  display: flex;
+  margin: 4px 0px 4px 0px;
+}
+.label {
+  position: relative;
+  font-weight: 600;
+  font-size: 13px;
+}
+.filterBtns {
+  display: flex;
+  width: 30%;
+}
+.claimDateBtns {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+.claimInput {
+  width: 30%;
+}
+.filterBtns button {
+  border: none;
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.myButton {
+  background-color: var(--astral);
+  color: var(--white);
+}
+.filterButtons {
+  display: flex;
+  list-style: none;
+}
+.buttonDiv {
+  display: flex;
+  justify-content: right;
+  margin: 0px 4px 0px 4px;
+}
+.zIndex {
+  z-index: 2;
+}
+.zIndex2 {
+  z-index: 82;
+}
+
+.datePic {
+  z-index: 9999;
+}
+
+.dateFields {
+  display: flex;
+  gap: 30px;
+}
+
+.dateFields div {
+  flex: 1 0 40%;
+}

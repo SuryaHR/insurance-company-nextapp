@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #337ab7;
+  padding: 8px;
+  .groupBtnContainer {
+    display: flex;
+    gap: 8px;
+  }
+  .searchContainer {
+    max-width: 500px;
+    width: 100%;
+  }
+}

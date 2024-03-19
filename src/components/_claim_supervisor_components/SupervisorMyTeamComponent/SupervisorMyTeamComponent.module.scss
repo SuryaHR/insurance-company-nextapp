@@ -1,0 +1,15 @@
+@use "@/scss/colors.scss" as *;
+.container {
+  display: flex;
+  justify-content: center;
+}
+.headingText {
+  font-size: 18px;
+  color: var(--doveGray);
+}
+.cardContainer {
+  padding: 0px 50px 0px 50px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2px 60px;
+}

@@ -1,0 +1,118 @@
+@use "@/scss/colors.scss" as *;
+
+.buttonRowContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+  padding-right: 12px;
+}
+
+.labelTextLeft {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.labelTextRight {
+  text-align: left;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 400;
+}
+
+.assignmentsCont {
+  padding: 20px;
+}
+
+.qpf,
+.qpb {
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.tableCont {
+  margin-top: 10px;
+}
+
+.tableBtmCalHead {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: end;
+}
+
+.additComme,
+.replaceCostDet {
+  border: 1px solid var(--grey5);
+  padding: 12px 15px 15px 15px;
+  border-radius: 5px;
+  width: 49%;
+  margin-right: 1%;
+}
+
+.vendorCommDesc {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.buttonCss {
+  padding: 2px 12px;
+  font-size: 13px;
+  background-color: var(--grey3);
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.buttonCss:disabled {
+  cursor: not-allowed;
+}
+
+.reactTable table th {
+  background: var(--astral);
+}
+
+.modalWidth {
+  width: 40%;
+}
+
+.paddingBottom20 {
+  padding-bottom: 20px;
+}
+
+.paddingTB5 {
+  padding: 5px 0;
+}
+
+.hr1 {
+  margin: 10px 0;
+}
+
+.paddingT5B15 {
+  padding: 5px 0px 15px 0px;
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.paddingTop10 {
+  padding-top: 10px;
+}

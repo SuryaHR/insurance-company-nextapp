@@ -1,0 +1,72 @@
+@use "@/scss/colors.scss" as *;
+
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  .loader {
+    color: var(--loaderBlue);
+    animation: spin 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes bounceDelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.page-spinner-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: fixed;
+  z-index: 10051;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div {
+    margin: 0 5px;
+    width: 18px;
+    height: 18px;
+    background: var(--loaderBlue);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bounceDelay 1.4s infinite ease-in-out;
+    animation: bounceDelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}

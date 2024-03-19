@@ -1,0 +1,101 @@
+@mixin coreLogicColors {
+  --astral: #272d39;
+  --mineShaft: #fff;
+  --lightBtn: #00aeef;
+  --darkGrey: none;
+  --lightBlue4: #2e3192;
+  --lightBlue5: #4c54c2;
+  --superSilver: #eeeeee80;
+  --darkHoverGrey: #475267;
+  // --mystic: #2e319221;
+  // --grey3: #5d6779;
+  // --sundayGrey: #4c54c2;
+}
+
+@mixin defaultColors {
+  --wisteria: #975fa8;
+  --royalBlue: #4169e1;
+  --darkSkyBlue: #40acfc;
+  --white: #fff;
+  --black: #000000;
+  --whiteSmoke: #f8f8f8;
+  --lightGrey: #d3d3d3;
+  --lightGrey2: #cfc9c9;
+  --darkGrey: #a9a9a9;
+  --iron: #d9dddc;
+  --grey1: #808080;
+  --grey2: #827e7e;
+  --grey3: #ddd;
+  --grey4: #c2cad8;
+  --grey5: #c7ccd0;
+  --grey6: #ccc;
+  --grey7: #777;
+  --grey8: #e5dfdf;
+  --mystic: #e7ecf1;
+  --lightBlue2: #32c5d2;
+  --lightBlue3: #26a1ab;
+  --lightBlue4: #55cef6;
+  --lightBlue5: #abe7fc;
+  --portGore: #27235e;
+  --errorRed: red;
+  --cadetGrey: #a7b2c0;
+  --oxfordBlue: #364150;
+  --doveGray: #666;
+  --mineShaft: #333;
+  --danube: #5c9bd1;
+  --astral: #337ab7;
+  --blueJay: #23527c;
+  --loaderBlue: #47cbd7;
+  --hoverBlue: #7fa5c6;
+  --lightBlack: #555555;
+  --notifySuccessColor: #bbf0c9;
+  --notifyWarningColor: #f5e1a2;
+  --notifyDangerColor: #edadab;
+  --noRecordRed: #df424f;
+  --lightBrown: #ffb27f54;
+  --grimmysGrey: #777777;
+  --charlesGrey: #c3c1c1;
+  --sundayGrey: #dcdcdc;
+  --ashtrayWhite: #eef1f5;
+  --greenNature: #0dad07;
+  --payNowBlue: #3598dc;
+  --cyanBlue: #2472b8;
+  --halfWhite: #f5f5f5;
+  --scarletRed: #f20707;
+  --lightGray: #c8c4c4;
+  --lightPeach: #fff3ea;
+  --chatBlue: #05728f;
+  --gainsborogray: #ebebeb;
+  --yellow: yellow;
+  --titleGray: #666666;
+  --frenchBlue: #007db8; //ref: https://colors.artyclick.com/color-name-finder/
+  --linkWater: #cce7f3;
+  --butterflyBlue: #33aae5;
+
+  /*Breadcrumb colors config*/
+  --breadcrumbItemColor: var(--astral);
+  --breadcrumbItemActiveColor: var(--cadetGrey);
+  --breadcrumbDividerColor: var(--cadetGrey);
+
+  // btns
+  --lightBlueBtn: var(--lightBlue2);
+  --lightBlueHoverBtn: var(--lightBlue3);
+  --darkBlueBtn: var(--portGore);
+  --darkBlueHoverBtn: #423aad;
+  --lightBtn: #edecec;
+
+  // scrollbar
+  --scrollbarColor: var(--astral);
+  // newClaims Tabs
+  --lightOrange: #ffd580;
+  --lightArrowGrey: #e8e8e8;
+  --blueLight: #8bb4e7;
+
+  // new receipt
+  --lightblue: #f1f4f7;
+  --textInfo: #659be0;
+  --textsuccess: #36c6d3;
+
+  --paleBlue: #caf0f8;
+  --fadedBlue: #5194ca;
+}

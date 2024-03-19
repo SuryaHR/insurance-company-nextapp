@@ -1,0 +1,115 @@
+@use "@/scss/colors.scss" as *;
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--astral);
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  .navItems {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .navItem {
+      width: 100%;
+      padding: 10px 15px;
+      height: 40px;
+      border: none;
+      font-size: 14px;
+      background-color: transparent;
+      font-weight: normal;
+      color: var(--white);
+      cursor: pointer;
+    }
+    .dropdownContent {
+      display: none;
+      min-width: 100%;
+      position: absolute;
+      transform: translateY(100%);
+      bottom: 0;
+      left: 0;
+      background-color: var(--white);
+      color: var(--frenchBlue);
+      z-index: 1;
+      box-shadow: none;
+      border-bottom: 4px solid var(--frenchBlue);
+      border-right: 1px solid var(--linkWater);
+      border-left: 1px solid var(--linkWater);
+      .dropdownOption {
+        min-width: 100%;
+        width: max-content;
+        padding: 8px 12px;
+        font-size: 14px;
+        font-weight: 300;
+        // position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--linkWater);
+          color: var(--frenchBlue);
+        }
+      }
+    }
+    .showDropdown {
+      display: block;
+    }
+  }
+  .active {
+    .navItem {
+      height: 36px;
+      margin: 2px 0;
+      background-color: var(--white);
+      color: var(--butterflyBlue);
+    }
+  }
+
+  .selected {
+    .navItem {
+      background-color: var(--butterflyBlue);
+      color: var(--white);
+    }
+  }
+  .subNavBarContainer {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    background-color: var(--white);
+    color: var(--frenchBlue);
+    z-index: 1;
+    box-shadow: none;
+    border-bottom: 4px solid var(--frenchBlue);
+    border-right: 1px solid var(--linkWater);
+    border-left: 1px solid var(--linkWater);
+    .childNav {
+      min-width: 100%;
+      width: max-content;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 300;
+      // position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--linkWater);
+        color: var(--frenchBlue);
+      }
+    }
+  }
+  .arrowBtn {
+    color: var(--frenchBlue);
+  }
+}

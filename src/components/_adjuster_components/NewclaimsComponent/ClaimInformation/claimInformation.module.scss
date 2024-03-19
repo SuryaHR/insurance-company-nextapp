@@ -1,0 +1,295 @@
+@use "@/scss/colors.scss" as *;
+
+.label {
+  position: relative;
+  font-weight: 570;
+  font-size: 13px;
+}
+.labelContainer {
+  position: relative;
+  font-weight: 570;
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+}
+.claim {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+.claimDate {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+
+.insuranceCompany {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+  right: 190px;
+}
+.mobile {
+  width: 40%;
+  height: 30px;
+  right: 310px;
+  padding: 3px 10px;
+}
+.phoneNumber {
+  width: 40%;
+  height: 30px;
+  padding: 3px 10px;
+}
+.mobile {
+  position: relative;
+  margin-left: 119px;
+}
+.secondaryPhoneNumber {
+  width: 40%;
+  height: 30px;
+  right: 350px;
+  padding: 3px 10px;
+  position: relative;
+  margin-left: 159px;
+}
+.address {
+  position: relative;
+  width: 40%;
+  height: 50px;
+  right: 190px;
+  padding: 3px 10px;
+}
+.addressOne {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  right: 190px;
+  padding: 3px 10px;
+}
+.addressSecond {
+  position: relative;
+  width: 40%;
+  height: 30px;
+  right: 195px;
+  padding: 3px 10px;
+  padding: 10px;
+}
+.options {
+  position: relative;
+  width: 8%;
+  right: 13.5%;
+  font-size: 12px;
+}
+.selectOptions {
+  position: relative;
+  font-size: 12px;
+}
+.zipCode {
+  position: relative;
+  width: 30%;
+  height: 30px;
+  right: 350px;
+  padding: 3px 10px;
+  left: 99px;
+  bottom: 16px;
+}
+.formControl {
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField {
+      height: 20px;
+      display: flex;
+      gap: 2px;
+    }
+  }
+}
+
+.formControl1 {
+  flex-direction: row;
+  align-items: center;
+  width: 10%;
+  gap: 3px;
+  margin-left: 20px;
+  .wrapper1 {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    .inputField1 {
+      display: flex;
+      gap: 3px;
+      height: 20px;
+    }
+  }
+}
+
+.textArea {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  resize: horizontal;
+  &:active,
+  &:focus {
+    outline: none;
+    border-color: var(--royalBlue);
+  }
+}
+.errorMessage {
+  position: relative;
+  left: 350px;
+  bottom: 30px;
+}
+
+.fileType {
+  font-size: 13px;
+  color: var(--astral);
+  cursor: pointer;
+}
+.fileType:hover {
+  color: var(--blueJay);
+}
+
+.categoryName {
+  font-size: 12px;
+  text-align: right;
+}
+.category {
+  padding-left: 5%;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.aggregateStyle {
+  margin-left: 20px;
+}
+.itemLimitSTyle {
+  margin-left: 20px;
+}
+.value {
+  background-color: transparent;
+  text-align: right;
+  border: none;
+}
+.aggregateCoverage {
+  font-weight: 600;
+  font-size: 12px;
+}
+.itemLimit {
+  font-weight: 600;
+  font-size: 13px;
+}
+.cards {
+  position: relative;
+  width: 65%;
+  margin-top: 50px;
+}
+.coverages {
+  font-weight: 600;
+  font-size: 12px;
+}
+.deleteButton {
+  background-color: transparent;
+  border: none;
+}
+.closeCircle {
+  width: 30px;
+  color: var(--noRecordRed);
+  height: 30px;
+  cursor: pointer;
+}
+.specialCategory {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+.specialCategoryDiv {
+  bottom: 35px;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+.specialcategoryInput {
+  margin-right: 1%;
+}
+.specialLimit {
+  font-weight: 570;
+  font-size: 13px;
+}
+.categoryInput {
+  margin-right: 3%;
+}
+.search {
+  position: relative;
+  height: 40px;
+}
+.outLimeSearch {
+  position: relative;
+  bottom: 30px;
+  margin-left: 180px;
+  opacity: 0.2;
+}
+.labelClassname {
+  font-size: 13px;
+}
+.ms-5 {
+  padding-left: 10px;
+}
+.homeSelect {
+  position: relative;
+  right: 8%;
+}
+.labelContent {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.file_input_wrapper .btn_upload {
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgb(200, 196, 196);
+  color: var(--black);
+  cursor: pointer;
+}
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  cursor: pointer;
+}
+.imagePreviewDiv {
+  width: 400px;
+  height: 400px;
+}
+
+.contentCenter {
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: red;
+}
+.redColor {
+  color: red;
+}
+
+@media only screen and (min-width: 2560px) {
+  .category {
+    padding-left: 10%;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,60 @@
+@use "@/scss/colors.scss" as *;
+
+.searchContainer {
+  padding: 20px;
+  tbody .profileRow {
+    background-color: var(--white);
+    padding: 0;
+    margin: 0;
+    &:hover {
+      background-color: var(--white);
+    }
+    &:nth-child(even) {
+      background-color: var(--white);
+    }
+    td {
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.tableTop {
+  margin-top: 10px;
+  height: 13px;
+  margin-bottom: 2px;
+  width: 100%;
+  background-color: var(--astral);
+}
+
+.searchBox {
+  position: relative;
+  background-color: var(--white);
+  border: 2px solid var(--grey6);
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+  width: 100%;
+  max-height: 32px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: calc(100% - 25px);
+  padding-left: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--grey7);
+}
+
+.textInfo {
+  color: var(--textInfo);
+}

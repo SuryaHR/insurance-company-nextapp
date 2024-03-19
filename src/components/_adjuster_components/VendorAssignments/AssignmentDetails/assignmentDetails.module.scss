@@ -1,0 +1,127 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.container {
+  display: flex;
+  gap: 20px;
+  .snapShotcardContainer {
+    margin-top: 10px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    .participantNameContainer {
+      text-transform: capitalize;
+    }
+    .contentContainer {
+      overflow-y: auto;
+      @include customscrollbar(var(--lightGrey2), 6px, true);
+
+      // cards UI
+      .contentCardsContainer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .snapShotContentCard {
+          border-top: 3px solid var(--lightBlue2);
+          width: 120px;
+          height: 85px;
+          padding: 5px;
+          .cardItemContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            gap: 10px;
+            text-align: center;
+            height: 100%;
+            .itemTitle {
+              color: var(--darkSkyBlue);
+              font-weight: 700;
+            }
+            .numericContent {
+              font-weight: 600;
+              height: fit-content;
+            }
+            .textContent {
+              font-size: 9px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .infoCard {
+    flex: 2 1 150px;
+  }
+}
+
+.fieldRowContainer {
+  display: flex;
+  font-size: 13px;
+  margin: 5px 0;
+  padding: 3px;
+  .fieldLabel {
+    text-align: right;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 12px;
+  }
+}
+
+.TabContainer {
+  .TabContent {
+    height: 40vh;
+    width: 30vw;
+  }
+}
+
+.ratingModal {
+  display: grid;
+  width: 500px;
+  gap: 20px;
+}
+.deleteModalBtn {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-left: 10px;
+  justify-content: center;
+}
+.checkbox {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+.label {
+  font-weight: 600;
+}
+.inputCheckbox {
+  margin-right: 5px;
+}
+
+.quote {
+  flex-basis: 150px;
+}
+
+.formControl .formInputControl:disabled {
+  font-weight: 700;
+  background-color: var(--white);
+  border: none;
+  text-align: center;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}

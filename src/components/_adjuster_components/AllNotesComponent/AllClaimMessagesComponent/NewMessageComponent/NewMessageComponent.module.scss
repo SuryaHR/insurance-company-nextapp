@@ -1,0 +1,45 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.container {
+  border-right: 1px solid var(--lightGrey);
+  height: 620px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.topHeader {
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteSmoke);
+}
+
+.listContainer {
+  height: 85%;
+  overflow-y: auto;
+  @include customscrollbar(var(--lightGrey), 6px, true);
+}
+
+.modalContainer {
+  align-items: start;
+}
+
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}
+
+.spin {
+  /* Define spinning animation */
+  animation: spinAnimation 1s forwards;
+}
+
+@keyframes spinAnimation {
+  100% {
+    transform: rotate(360deg);
+  }
+}

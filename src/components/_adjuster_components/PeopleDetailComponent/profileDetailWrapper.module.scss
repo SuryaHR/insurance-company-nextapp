@@ -1,0 +1,54 @@
+@use "@/scss/colors" as *;
+
+.root {
+  padding: 0 24px;
+  max-width: 100%;
+  .wrapperContainer {
+    border: 1px solid var(--grey5);
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    margin-top: 8px;
+    .heading {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 14px;
+      color: var(--danube);
+    }
+    .subHeading {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      color: var(--danube);
+      margin-top: 16px;
+    }
+
+    .detailMainDiv {
+      background-color: var(--lightblue);
+      padding: 4px 0 10px;
+      margin-top: 4px;
+      align-items: flex-start;
+      font-size: 13px;
+      color: var(--mineShaft);
+      .imageWrapper {
+        padding: 4px;
+        border: 1px solid var(--grey5);
+        height: 140px;
+        aspect-ratio: 1/1;
+        background-color: var(--white);
+        .imageDiv {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          img {
+            border: 1px solid var(--grey5);
+          }
+        }
+      }
+      label {
+        font-weight: 600;
+        line-height: 18px;
+      }
+    }
+  }
+}

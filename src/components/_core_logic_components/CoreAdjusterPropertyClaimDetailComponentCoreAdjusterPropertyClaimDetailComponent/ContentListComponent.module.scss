@@ -1,0 +1,123 @@
+@use "@/scss/colors.scss" as *;
+@use "@/scss/mixins.scss" as *;
+
+.contentListHeaderContainer {
+  border-radius: 0px;
+  border-bottom: 1px solid var(--doveGray) !important;
+  padding: 0;
+  padding-bottom: 4px;
+
+  .contentListHeader {
+    font-size: 14px;
+    padding: 1px;
+    border-bottom: none;
+  }
+}
+.contentListContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+
+  .contentListContentContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+.contentListButtonDiv {
+  display: flex;
+  gap: 10px;
+  .contentListBtn {
+    margin-left: 0px;
+    width: max-content;
+    min-height: 37px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.dropDownDiv {
+  background-color: var(--white);
+  width: 8%;
+  z-index: 999;
+  position: absolute;
+  top: 667px;
+  left: 20px;
+  border-radius: 4px;
+}
+.dropDownInnerDiv {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.dropDownInnerDiv:hover {
+  background-color: lightblue;
+}
+.modalWidth {
+  width: 100%;
+}
+.selectedItemsLine {
+  padding: 8px;
+  font-size: 12px;
+  color: var(--astral);
+}
+.modalContent {
+  width: 600px;
+  position: absolute;
+  top: 30px;
+}
+.modalPaidContent {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+}
+.modalLabel {
+  font-size: 14px;
+  // padding: 6px;
+}
+
+.centerAlign {
+  align-items: center;
+}
+
+.inputBox {
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.btnWithIcon {
+  display: flex;
+  flex-flow: nowrap;
+
+  margin-left: 0px;
+  width: max-content;
+  min-height: 37px;
+
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+.OutsideClickHandlerDiv {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: auto;
+  > div:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+  }
+  .toolTipClass {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 0px;
+    z-index: 999;
+    box-shadow: 2px 2px 2px 2px #888888;
+  }
+}

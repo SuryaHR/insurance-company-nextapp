@@ -1,0 +1,31 @@
+@use "@/scss/colors.scss" as *;
+
+.root {
+  height: fit-content;
+  background-color: var(--lightblue);
+  margin-bottom: 8px;
+  padding: 8px 4px;
+  font-size: 13px;
+  .imageWrapper {
+    padding: 4px;
+    border: 1px solid var(--grey5);
+    height: 120px;
+    aspect-ratio: 1/1;
+    background-color: var(--white);
+    .imageDiv {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      img {
+        border: 1px solid var(--grey5);
+      }
+    }
+  }
+  .label {
+    font-weight: 600;
+    padding-left: 0;
+  }
+  .viewBtn {
+    margin-top: auto;
+  }
+}

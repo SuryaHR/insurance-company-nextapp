@@ -1,0 +1,78 @@
+.claimTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.checkHeader {
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    justify-content: center !important;
+  }
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+}
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  z-index: 999;
+  div {
+    cursor: pointer;
+  }
+}
+.coreLogicTable {
+  table {
+    thead {
+      background: var(--white);
+    }
+    th {
+      background: none;
+      height: 48px;
+      font-size: 13px;
+      border: none;
+      border-bottom: 1px solid rgb(128, 128, 128);
+      padding: 4px 24px;
+    }
+    td {
+      height: 48px;
+      font-size: 13px;
+      border: none;
+      border-bottom: 1px solid rgb(128, 128, 128);
+      padding: 4px 24px;
+    }
+    tbody tr:nth-child(even) {
+      background-color: none !important;
+    }
+
+    thead tr th:nth-child(even) {
+      background-color: var(--superSilver);
+    }
+
+    tbody tr td:nth-child(even) {
+      background-color: var(--superSilver) !important;
+    }
+    .originalItemHeader {
+      margin-left: auto;
+      margin-right: auto;
+      background-color: var(--lightBlue5) !important;
+      color: var(--white);
+      div {
+        justify-content: center !important;
+      }
+    }
+    .replacementItemHeader {
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--white);
+
+      background-color: var(--lightBlue4) !important;
+      div {
+        justify-content: center !important;
+      }
+    }
+  }
+}

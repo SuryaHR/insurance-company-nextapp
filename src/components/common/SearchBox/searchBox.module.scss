@@ -1,0 +1,27 @@
+@use "@/scss/colors.scss" as *;
+
+.searchBox {
+  position: relative;
+  background-color: var(--white);
+  border: 1px solid var(--grey6);
+  border-radius: 4px;
+  padding-left: 15px;
+  width: 100%;
+  height: inherit;
+  padding: 2px 15px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  width: calc(100% - 25px);
+  padding-left: 20px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--grey7);
+}

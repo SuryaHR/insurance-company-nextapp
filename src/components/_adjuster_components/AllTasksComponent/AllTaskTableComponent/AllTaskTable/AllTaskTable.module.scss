@@ -1,0 +1,40 @@
+@use "@/scss/colors.scss" as *;
+
+.claimTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  z-index: 999;
+}
+.deleteButton {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--noRecordRed);
+  cursor: pointer;
+}
+.deleteButton:hover {
+  text-decoration: underline;
+}
+.cancelButton {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--astral);
+  cursor: pointer;
+}
+.cancelButton:hover {
+  text-decoration: underline;
+}
+
+.notAllowed {
+  cursor: not-allowed;
+  color: grey;
+}
+
+.notAllowed:hover {
+  text-decoration: none;
+}

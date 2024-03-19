@@ -1,0 +1,5 @@
+@use "@/scss/colors.scss" as colors;
+.actionBtn {
+  color: var(--astral);
+  cursor: pointer;
+}

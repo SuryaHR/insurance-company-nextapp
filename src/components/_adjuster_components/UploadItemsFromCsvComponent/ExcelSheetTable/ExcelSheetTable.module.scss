@@ -1,0 +1,46 @@
+@use "@/scss/colors.scss" as *;
+
+.removeButton {
+  color: var(--astral);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.removeButton:hover {
+  text-decoration: underline;
+}
+
+.saveButton {
+  color: var(--astral);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.saveButton:hover {
+  text-decoration: underline;
+}
+
+.cancelButton {
+  color: var(--astral);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.cancelButton:hover {
+  text-decoration: underline;
+}
+
+// .invalidRow {
+//   background-color: red;
+// }

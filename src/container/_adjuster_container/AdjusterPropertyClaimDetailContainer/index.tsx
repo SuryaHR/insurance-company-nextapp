@@ -1,0 +1,3 @@
+import AdjusterPropertyClaimDetailContainer from "./AdjusterPropertyClaimDetailContainer";
+
+export default AdjusterPropertyClaimDetailContainer;

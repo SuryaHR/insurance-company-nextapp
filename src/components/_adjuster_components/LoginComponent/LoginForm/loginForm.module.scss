@@ -1,0 +1,12 @@
+.loginForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  .link {
+    width: fit-content;
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+  }
+}

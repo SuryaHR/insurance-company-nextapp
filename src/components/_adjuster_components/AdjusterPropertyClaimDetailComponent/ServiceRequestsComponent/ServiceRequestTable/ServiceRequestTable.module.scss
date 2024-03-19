@@ -1,0 +1,17 @@
+.claimTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.AssignText {
+  font-weight: 900;
+  margin-right: 3px;
+}
+.DeleteText {
+  margin-left: 3px;
+  font-weight: 900;
+  color: red;
+  &:hover {
+    color: maroon;
+  }
+}

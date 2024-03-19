@@ -1,0 +1,69 @@
+@use "@/scss/colors.scss" as *;
+
+.form-control {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+  .input-field {
+    width: 100%;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: 1px solid var(--grey4);
+    font-family: inherit;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-color: var(--royalBlue);
+    }
+    &:disabled {
+      background-color: var(--grey3);
+      cursor: not-allowed;
+    }
+  }
+  .small-input {
+    height: 30px;
+  }
+  .medium-input {
+    height: 35px;
+  }
+  .large-input {
+    height: 40px;
+  }
+  .error-field {
+    border-color: var(--errorRed);
+    &:active,
+    &:focus {
+      border-color: var(--errorRed);
+    }
+  }
+
+  .normal-input {
+    border-radius: unset;
+    border: 1px solid var(--grey4);
+    background-color: var(--white);
+    font-size: 12px;
+    height: 25px;
+  }
+  .passwordFieldContainer {
+    position: relative;
+    .passwordFieldPadding {
+      padding-right: 30px;
+    }
+    .eyeIconContainer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+  .error-msg {
+    text-align: left;
+    font-size: 13px;
+    color: var(--errorRed);
+  }
+}

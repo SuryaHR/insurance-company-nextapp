@@ -1,0 +1,15 @@
+@use "@/scss/colors.scss" as *;
+
+.root {
+  .container {
+    width: 100%;
+    height: fit-content;
+    min-height: calc(100vh - 8px);
+    max-width: 99%;
+    margin: 0 auto;
+
+    border-left: 1px solid var(--grey1);
+    border-right: 1px solid var(--grey1);
+    box-shadow: 0px 1px 16px 1px var(--oxfordBlue);
+  }
+}

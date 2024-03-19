@@ -1,0 +1,15 @@
+@use "@/scss/colors.scss" as *;
+.claimTableContainer {
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+.showMoreLessBtn {
+  color: var(--lightBlue3);
+  background: none;
+  border: none;
+  font-size: 10px;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}

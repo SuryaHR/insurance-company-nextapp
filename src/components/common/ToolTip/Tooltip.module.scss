@@ -1,0 +1,31 @@
+@use "@/scss/colors.scss" as *;
+.tooltipContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  // width: 10%;
+}
+
+.tooltipTrigger {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  .infoIcon {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  padding: 8px;
+  background-color: #33aae5;
+  color: var(--white);
+  border-radius: 4px;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0.9;
+  text-align: left;
+}

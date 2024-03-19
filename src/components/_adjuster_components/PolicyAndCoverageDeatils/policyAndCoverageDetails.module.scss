@@ -1,0 +1,467 @@
+@use "@/scss/mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.policyAndCoverageDetails {
+  padding: 4px 8px;
+
+  .policyHolderName {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .cardPolicy {
+    height: 370px;
+    overflow-y: auto;
+    @include customscrollbar(var(--lightGrey2), 6px, true);
+  }
+  .editableDiv {
+    width: 100%;
+    height: 290px;
+    text-align: center;
+    padding: 20px;
+    overflow-y: auto;
+    @include customscrollbar(var(--lightGrey2), 6px, true);
+  }
+  .actionBtnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 12px 0 0 12px;
+    gap: 12px;
+  }
+}
+
+.selectBox {
+  text-align: left;
+}
+.cardPolicyData {
+  height: 370px;
+  overflow-y: auto;
+  @include customscrollbar(var(--lightGrey2), 6px, true);
+}
+
+.policyNo {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 15px;
+  white-space: nowrap;
+}
+.address {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.graceSmith {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.policyNumber {
+  padding-left: 10px;
+}
+.policyCoverageDetails {
+  padding-top: 6%;
+}
+.edit {
+  background-color: transparent;
+  border: none;
+  color: #32c2ca;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 1px;
+  cursor: pointer;
+}
+.edit:hover {
+  border-bottom: 1px solid var(--portGore);
+  color: var(--portGore);
+}
+.resetPassword {
+  background-color: transparent;
+  border: none;
+  color: #32c2ca;
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+.resetPassword:hover {
+  color: var(--astral);
+}
+.editIcon {
+  margin-top: 2px;
+  margin-right: 5px;
+}
+.editText {
+  display: flex;
+  gap: 1px;
+}
+.Password {
+  height: 2%;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.categoryLimit {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+}
+.customTitleClassname {
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table {
+  padding-top: 10px;
+  width: 50%;
+  padding: 20px;
+}
+.categoryLimit {
+  padding-top: 10px;
+}
+.cancelButton {
+  padding-left: 380px;
+}
+.faRegEdit {
+  display: flex;
+  gap: 3px;
+}
+.editbutton1 {
+  width: 40px;
+}
+.editText1 {
+  display: flex;
+  gap: 1px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .editableDiv {
+    width: 600px;
+    height: 270px;
+    text-align: center;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .cardPolicy {
+    height: 370px;
+  }
+  .cardPolicyData {
+    height: 370px;
+    overflow-y: hidden;
+  }
+  .policyNo {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 1px;
+
+    cursor: pointer;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .edit:hover {
+    border-bottom: 1px solid var(--portGore);
+    color: var(--portGore);
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: var(--astral);
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+    margin-top: 2px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .cardPolicy {
+    height: 370px;
+  }
+  .cardPolicyData {
+    height: 370px;
+  }
+  .editableDiv {
+    width: 600px;
+    height: 270px;
+    text-align: center;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .policyNo {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 1px;
+    cursor: pointer;
+  }
+  .edit:hover {
+    border-bottom: 1px solid var(--portGore);
+    color: var(--portGore);
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: var(--astral);
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+    margin-top: 2px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}
+@media only screen and (min-width: 1820px) {
+  .cardPolicy {
+    height: 370px;
+  }
+
+  .cardPolicyData {
+    height: 370px;
+  }
+  .editableDiv {
+    width: 600px;
+    height: 270px;
+    text-align: center;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .policyNo {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 15px;
+  }
+  .number {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-weight: 600;
+    justify-content: center;
+  }
+  .policyNumber {
+    padding-left: 10px;
+  }
+  .policyCoverageDetails {
+    padding-top: 6%;
+  }
+  .edit {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .edit:hover {
+    border-bottom: 1px solid var(--portGore);
+    color: var(--portGore);
+  }
+  .resetPassword {
+    background-color: transparent;
+    border: none;
+    color: #32c2ca;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .resetPassword:hover {
+    color: var(--astral);
+  }
+  .editIcon {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+  .editText {
+    display: flex;
+    gap: 1px;
+  }
+  .Password {
+    height: 2%;
+
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .categoryLimit {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+  }
+  .customTitleClassname {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table {
+    padding-top: 10px;
+    width: 50%;
+    padding: 20px;
+  }
+  .categoryLimit {
+    padding-top: 10px;
+  }
+  .faRegEdit {
+    display: flex;
+    gap: 3px;
+    margin-top: 8px;
+  }
+  .editbutton1 {
+    width: 60px;
+  }
+  .editText1 {
+    margin-bottom: 9px;
+  }
+}
+
+.editStyle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  align-items: center;
+}

@@ -1,0 +1,27 @@
+@use "@/scss/colors.scss" as *;
+
+.coverageSummaryListHeaderContainer {
+  border-radius: 0px;
+  border-bottom: 1px solid var(--doveGray);
+  margin-bottom: 5px;
+  padding: 0;
+  padding-bottom: 4px;
+
+  .coverageSummaryListHeader {
+    font-size: 18px;
+    padding: 1px;
+    border-bottom: none;
+  }
+}
+
+.link {
+  text-align: right;
+  font-weight: 600;
+}
+
+.CoverageSummaryTableScrollContainer {
+  margin: 40px;
+}
+.tabContent {
+  margin: 20px;
+}

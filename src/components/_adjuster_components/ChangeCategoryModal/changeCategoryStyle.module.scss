@@ -1,0 +1,41 @@
+@use "@/scss/mixins.scss" as *;
+@use "@/scss/colors.scss" as *;
+
+.addItemContainer {
+  max-height: 400px;
+  max-width: 650px;
+  padding: 0 25px;
+  overflow-y: scroll;
+}
+
+.labelClassname {
+  font-size: 14px;
+  font-weight: 600;
+  order: 2;
+  cursor: pointer;
+}
+
+.formControls {
+  flex-direction: row !important;
+  width: fit-content;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  align-items: start;
+  z-index: 8888;
+}
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}
+
+.items {
+  cursor: pointer;
+}

@@ -1,0 +1,90 @@
+@use "@/scss/colors.scss" as *;
+
+.stickyContainer {
+  margin-left: 20px;
+  .headingContainer {
+    margin-top: 10px;
+    font-weight: 400;
+    padding-left: 0;
+  }
+  .headingTxt {
+    color: var(--doveGray);
+    padding: 1px;
+    font-size: 16px;
+  }
+}
+
+.firstName {
+  margin-left: 23px;
+  font-weight: 570;
+  font-size: 13px;
+}
+.cancelButton {
+  margin-right: 3px;
+}
+
+.stateSelect {
+  margin-left: 22px;
+  font-weight: 570;
+  font-size: 13px;
+}
+
+.mobilePhone {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 570;
+}
+.mobileSection {
+  font-size: 13px;
+  margin-left: 47px;
+  font-weight: 570;
+}
+
+.emailStyle {
+  font-size: 13px;
+  font-family: inherit;
+}
+.deleteButton {
+  border: none;
+  border-radius: 0;
+  outline: none;
+  font-size: 13px;
+  margin-left: 120px;
+  font-weight: 570;
+}
+
+.number {
+  font-size: 13px;
+}
+
+.editButton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 2560) {
+  .mobilePhone {
+    margin-left: 7px;
+    font-size: 13px;
+    font-weight: 570;
+  }
+  .mobileSection {
+    font-size: 96px;
+    margin-left: 47px;
+    font-weight: 570;
+  }
+}
+
+.fileType {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 570;
+}
+
+.pic {
+  width: auto;
+  height: auto;
+  border: 1px solid rgb(226, 223, 223);
+}

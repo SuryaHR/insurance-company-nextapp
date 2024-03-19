@@ -1,0 +1,314 @@
+@use "@/scss/colors.scss" as *;
+
+.heading {
+  position: sticky;
+  top: 94px;
+  z-index: 999;
+  background: var(--white);
+  padding-left: 0;
+}
+.headingTitle {
+  color: var(--doveGray);
+  padding: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.customNav {
+  position: sticky;
+  top: 40px;
+  min-height: 20px;
+  background-color: var(--white);
+  z-index: 999;
+  .breadcrumb {
+    margin-top: 10px;
+  }
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 35px;
+  z-index: 9;
+  background-color: var(--white);
+}
+.footerStyles {
+  background-color: var(--astral) !important;
+  color: var(--white);
+  text-align: right;
+}
+.alignRight {
+  text-align: right;
+}
+.claimedItemListContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  .clearAll {
+    color: var(--white);
+    text-decoration: underline;
+  }
+}
+
+.receiptMapperContainer {
+  margin-left: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--grey6);
+  border-right: 1px solid var(--grey6);
+  border-radius: 5px;
+  height: 700px;
+  .receiptMapperListContainer {
+    background-color: var(--astral);
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+  }
+}
+.tableContainer {
+  min-height: 400px;
+  max-height: 520px;
+  overflow-y: auto;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: #dddddd75;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--grey6);
+    border-radius: 10px;
+  }
+}
+
+// pdf viewer styles
+
+.fileNameDiv {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-evenly;
+}
+.zoombuttonDiv {
+  gap: 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+.mappercloseIcon {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  cursor: pointer;
+  z-index: 11;
+  width: 25px;
+  height: 25px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.mapperpopup {
+  position: relative;
+  width: 225px;
+  border: 3px solid var(--grey3);
+  display: inline-table;
+  border-radius: 5px;
+  background: var(--white);
+  z-index: 9;
+
+  .formRow {
+    display: flex;
+    align-items: center;
+    &:nth-child(even) {
+      background-color: #337ab708;
+    }
+    &:hover {
+      background-color: #f3f4f6;
+    }
+    .formCellHeading {
+      height: 40px;
+      padding: 8px;
+      font-size: 12px;
+      border: 1px solid var(--mystic);
+      color: #333333;
+      max-width: 121px;
+      flex: 100%;
+    }
+    .formCellInput {
+      padding: 8px;
+      height: 40px;
+      font-size: 14px;
+      border: 1px solid var(--mystic);
+      color: #333333;
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+  }
+  .formButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+  }
+}
+.pdfRelativeContainer {
+  position: relative;
+  overflow: hidden;
+}
+.receiptPdfPages {
+  position: relative;
+  span,
+  div,
+  p,
+  br,
+  a {
+    cursor: crosshair;
+  }
+  overflow: auto;
+  height: 500px;
+
+  cursor: crosshair;
+}
+.subtotalRow {
+  font-weight: 600;
+  background-color: var(--mystic);
+}
+.editPoint {
+  position: absolute;
+  z-index: 9;
+  .editIcon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    cursor: pointer;
+  }
+  .itemContainer {
+    margin-top: 4px;
+    border: 2px solid var(--noRecordRed);
+    display: flex;
+    padding: 7px;
+    gap: 7px;
+    border-radius: 4px;
+    cursor: auto;
+    background-color: var(--mystic);
+
+    .itemdiv {
+      width: 100%;
+      padding: 3px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      background-color: var(--white);
+      border: 1px solid var(--grey4);
+      font-family: inherit;
+    }
+  }
+}
+
+.tagModalWidth {
+  width: 600px;
+}
+.modalpopup {
+  padding-top: 120px;
+  z-index: 1;
+}
+.checkHeader {
+  margin-left: auto;
+  margin-right: auto;
+  div {
+    justify-content: center !important;
+  }
+}
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid grey;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+.holdOverSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 4px 0px 4px 0px;
+}
+.holdOverBtn {
+  margin: 0px 2px 0px 2px;
+  border: none;
+}
+.paidSection {
+  display: flex;
+  margin-bottom: 10px;
+}
+.cashValueSection {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px 25px 0px 120px;
+}
+.holderPaymentSection {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0px 25px 0px 30px;
+}
+.itemPrice {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0px 8px 0px;
+}
+.spanMargin {
+  margin: 0px 4px 0px 4px;
+}
+.labelText {
+  font-size: 20px;
+  font-weight: 600;
+}
+.labelTextRed {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(255, 56, 35);
+}
+.labelTextGreen {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(76, 216, 100, 0.87);
+}
+.modalPaidContent {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+}
+
+.modalLabel {
+  font-size: 14px;
+}
+.modalWidth {
+  width: 100%;
+}
+.inputBox {
+  flex-direction: row !important;
+  margin-top: 16px;
+  gap: 15px;
+}
+.tabComponentMargin {
+  margin-top: 25px;
+}
+.expandIcon {
+  color: var(--white);
+  margin: 0px 10px 0px 5px;
+  cursor: pointer;
+}
+
+.btnWidth {
+  width: 90%;
+}

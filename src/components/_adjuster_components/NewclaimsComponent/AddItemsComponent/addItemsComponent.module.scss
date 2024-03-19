@@ -1,0 +1,27 @@
+@use "@/scss/colors.scss" as *;
+
+.addItemsTitle {
+  background-color: var(--astral);
+  color: var(--white);
+  font-size: 13px;
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.newClaimBtn {
+  width: auto;
+  //   height: 30px;
+}
+
+.cancelButton {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  color: var(--astral);
+  // float: right;
+  font-weight: 600;
+}

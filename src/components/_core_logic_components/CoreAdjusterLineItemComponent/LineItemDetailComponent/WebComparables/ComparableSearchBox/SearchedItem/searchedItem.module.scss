@@ -1,0 +1,76 @@
+@use "@/scss/colors" as *;
+.root {
+  width: 100%;
+  max-height: 132px;
+  height: 100%;
+  min-height: 132px;
+  border: 1px solid var(--grey5);
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  overflow: auto;
+  column-gap: 8px;
+  .imageDiv {
+    min-height: 100%;
+    width: 128px;
+    position: relative;
+    img {
+      border: 1px solid var(--grey5);
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 8px;
+    .descDiv {
+      flex: 1;
+      display: flex;
+      max-width: 400px;
+      flex-direction: column;
+      justify-content: space-between;
+      .descDetail {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .desc {
+          color: #575757;
+          font-size: 16px;
+          line-height: 130%;
+        }
+        .rating {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+      .merchant {
+        color: #6a6a6a;
+        font-size: 12px;
+        font-weight: 500;
+        & > span {
+          color: #347ab6;
+        }
+      }
+      a {
+        font-size: 12px;
+        color: #347ab6;
+        text-decoration: underline;
+      }
+    }
+    .actionDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 4px;
+      button {
+        width: 100%;
+      }
+      .price {
+        color: #575757;
+        font-size: 22px;
+        line-height: 130%;
+      }
+    }
+  }
+}

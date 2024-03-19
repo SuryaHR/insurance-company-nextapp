@@ -1,0 +1,36 @@
+@use "@/scss/colors.scss" as *;
+.upperContainer {
+  border-bottom: 1px solid var(--grey3);
+}
+
+.alignRight {
+  justify-content: right;
+}
+
+.inputBoxAlign {
+  text-align: right;
+}
+
+.labelStyle {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.clipped {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.textArea {
+  height: 50px;
+  padding: 5px;
+}
+
+.iconColor {
+  color: var(--scarletRed);
+}
+
+.fileInputStyle {
+  display: none;
+}

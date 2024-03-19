@@ -1,0 +1,46 @@
+.root {
+  padding-bottom: 32px;
+  hr {
+    border-top: 1px solid #c7ccd0;
+    border-bottom: 0;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 13px;
+    .btnGroup {
+      margin-left: auto;
+      display: flex;
+      gap: 8px;
+    }
+    .formContent {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      label {
+        text-align: right;
+        font-weight: 600;
+      }
+    }
+  }
+  .imageWrapper {
+    position: relative;
+    width: 200px;
+    height: 190px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+  .fileBtnWrapper {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    .fileBtn {
+      font-size: 13px;
+      font-weight: 400;
+      padding: 0;
+    }
+  }
+}

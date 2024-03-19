@@ -1,0 +1,107 @@
+@use "@/scss/colors.scss" as *;
+
+.tabsAllStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: #90ee90;
+  border-bottom: 1px solid var(--lightBlack);
+}
+
+.orange {
+  background-color: var(--lightOrange);
+  border-bottom: 1px solid var(--lightBlack);
+}
+
+.grey {
+  background-color: var(--lightArrowGrey);
+  border-bottom: 1px solid var(--blueLight);
+}
+
+.arrowContainer {
+  position: relative;
+  top: 50%;
+  width: 24%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 4px;
+}
+
+.arrowContainer::before,
+.arrowContainer::after {
+  content: "";
+  position: absolute;
+}
+
+.arrowContainer::before {
+  top: 5px;
+  background-color: var(--white);
+  left: -11px;
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+}
+
+.arrowContainer::after {
+  top: 5px;
+  border: none;
+  right: -11px;
+  width: 22px;
+  height: 22px;
+  background: inherit;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.tabText {
+  flex: 1;
+  text-align: center;
+  color: var(--mineShaft);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 2560px) {
+  .arrowContainer {
+    position: relative;
+    // cursor: pointer;
+    top: 50%;
+    width: 32%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin-left: 4px;
+  }
+
+  .arrowContainer::before,
+  .arrowContainer::after {
+    content: "";
+    position: absolute;
+  }
+
+  .arrowContainer::before {
+    top: 5px;
+    background-color: var(--white);
+    left: -11px;
+    width: 22px;
+    height: 22px;
+    transform: rotate(45deg);
+  }
+
+  .arrowContainer::after {
+    top: 5px;
+    border: none;
+    right: -11px;
+    width: 22px;
+    height: 22px;
+    background: inherit;
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+}

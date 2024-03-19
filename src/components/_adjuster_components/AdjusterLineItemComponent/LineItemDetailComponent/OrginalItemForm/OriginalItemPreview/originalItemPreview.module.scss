@@ -1,0 +1,31 @@
+@use "@/scss/mixins.scss" as *;
+.root {
+  max-width: 100%;
+  max-height: 463px;
+  min-height: 463px;
+  overflow-y: auto;
+  font-size: 13px;
+  padding: 10px 15px;
+  color: var(--mineShaft);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  @include customscrollbar(rgb(207, 201, 201), 6px, true);
+  .contentDiv {
+    label {
+      font-weight: 600;
+      line-height: 18px;
+    }
+  }
+  .groupedContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 500px;
+    .contentDiv {
+      flex: 1;
+    }
+  }
+}

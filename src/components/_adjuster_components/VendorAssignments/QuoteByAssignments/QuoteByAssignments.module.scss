@@ -1,0 +1,13 @@
+@use "@/scss/colors.scss" as *;
+
+.assignmentsCont {
+  padding: 20px;
+}
+
+.tableTop {
+  margin-top: 10px;
+  height: 13px;
+  margin-bottom: 2px;
+  width: 100%;
+  background-color: var(--astral);
+}

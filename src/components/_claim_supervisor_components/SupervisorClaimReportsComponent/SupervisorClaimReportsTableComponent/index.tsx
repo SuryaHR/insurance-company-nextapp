@@ -1,0 +1,3 @@
+import SupervisorClaimReportsTableComponent from "./SupervisorClaimReportsTableComponent";
+
+export default SupervisorClaimReportsTableComponent;

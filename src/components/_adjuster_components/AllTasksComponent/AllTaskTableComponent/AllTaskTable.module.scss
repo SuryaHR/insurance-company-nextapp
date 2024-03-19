@@ -1,0 +1,22 @@
+@use "@/scss/colors.scss" as *;
+
+.claimContainer {
+  background-color: var(--astral);
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  .claimContentContainer {
+    height: inherit;
+    display: flex;
+    width: 100%;
+  }
+}
+.modalContainer {
+  align-items: start;
+}
+.modalContent {
+  width: 600px;
+  position: relative;
+  top: 30px;
+}

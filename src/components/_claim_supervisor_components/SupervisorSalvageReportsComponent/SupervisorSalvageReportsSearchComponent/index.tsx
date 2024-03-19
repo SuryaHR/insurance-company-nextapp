@@ -1,0 +1,3 @@
+import SupervisorSalvageReportsSearchBox from "./SupervisorSalvageReportsSearchComponent";
+
+export default SupervisorSalvageReportsSearchBox;

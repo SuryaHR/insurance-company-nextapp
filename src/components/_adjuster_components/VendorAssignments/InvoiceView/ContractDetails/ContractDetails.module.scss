@@ -1,0 +1,40 @@
+@use "@/scss/colors.scss" as *;
+
+.contactDetCont {
+  padding: 0;
+}
+
+.paddingTB5 {
+  padding: 5px 0;
+}
+
+.labelTextLeft {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.labelTextLeftBold {
+  text-align: right;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.labelTextRight {
+  text-align: left;
+  font-size: 13px;
+  color: var(--mineShaft);
+  font-weight: 400;
+}
+
+.headingCont {
+  margin-top: 30px;
+}
+
+.lastChildBHead {
+  margin-bottom: 30px;
+}

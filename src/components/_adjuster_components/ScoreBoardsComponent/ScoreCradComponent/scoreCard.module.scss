@@ -1,0 +1,32 @@
+.loaderContainer {
+  min-height: 112px;
+}
+
+@mixin scoreWidthMonth {
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.newClaimCard {
+  @include scoreWidthMonth;
+}
+
+.closedClaimCard {
+  @include scoreWidthMonth;
+}
+
+.avgClosingTimeCard {
+  @include scoreWidthMonth;
+}
+.claimTypeCount {
+  font-size: 16px;
+  font-weight: 600px;
+}
+.claimTypeLabel {
+  font-size: 13px;
+  font-weight: 600;
+}

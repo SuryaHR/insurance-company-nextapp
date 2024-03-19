@@ -1,0 +1,62 @@
+@use "@/scss/colors.scss" as *;
+
+.root {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  .heading {
+    position: sticky;
+    top: 94px;
+    z-index: 999;
+    background: var(--white);
+    padding-left: 0;
+  }
+  .noPageHeading {
+    top: 60px;
+  }
+  .headingTitle {
+    color: var(--doveGray);
+    padding: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .customNav {
+    position: sticky;
+    min-height: 20px;
+    background-color: var(--white);
+    z-index: 999;
+    .breadcrumb {
+      margin-top: 10px;
+    }
+  }
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: var(--white);
+
+  .paginationButtonsContainer {
+    margin-top: 10px;
+  }
+}
+
+.stickyConversation {
+  position: fixed;
+  z-index: 9;
+  bottom: 7rem;
+  left: auto;
+  right: 0;
+  padding: 5px 12px;
+  font-size: 18px;
+  color: var(--white);
+  border-radius: 8px;
+  padding: 4px 5px;
+  min-width: 40px;
+  box-shadow:
+    0 2px 5px 0 rgb(0 0 0 / 2%),
+    0 1px 10px 0 rgb(10 116 20 / 87%);
+  cursor: pointer;
+}

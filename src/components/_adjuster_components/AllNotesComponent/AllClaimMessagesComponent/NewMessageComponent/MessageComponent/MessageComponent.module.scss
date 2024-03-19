@@ -1,0 +1,54 @@
+@use "@/scss/colors.scss" as *;
+.container {
+  border-bottom: 1px solid var(--grey8);
+  height: 120px;
+  position: relative;
+}
+.container:hover {
+  background-color: var(--lightblue);
+}
+.innerContainer {
+  display: flex;
+  height: 65%;
+}
+.dateTime {
+  text-align: right;
+  font-size: 13px;
+  font-weight: 550;
+}
+.nameStyle {
+  font-size: 13px;
+  font-weight: 550;
+}
+.messageStyle {
+  font-size: 13px;
+  word-wrap: pre-wrap;
+}
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+}
+.innerText {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 0px;
+  font-size: 18px;
+  font-weight: 550;
+}
+.tooltip {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 4px;
+  z-index: 1;
+  white-space: nowrap;
+  opacity: 0.9;
+  text-align: left;
+}
